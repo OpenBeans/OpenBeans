@@ -1,0 +1,19 @@
+@comment $NetBSD$
+coolbeans-2018.12/nbjavac/.lastModified
+coolbeans-2018.12/nbjavac/config/Modules/org-netbeans-modules-nbjavac-api.xml
+coolbeans-2018.12/nbjavac/config/Modules/org-netbeans-modules-nbjavac-impl.xml
+coolbeans-2018.12/nbjavac/config/Modules/org-netbeans-modules-nbjavac.xml
+coolbeans-2018.12/nbjavac/modules/ext/nb-javac-api.jar
+coolbeans-2018.12/nbjavac/modules/ext/nb-javac-impl.jar
+coolbeans-2018.12/nbjavac/modules/org-netbeans-modules-nbjavac-api.jar
+coolbeans-2018.12/nbjavac/modules/org-netbeans-modules-nbjavac-impl.jar
+coolbeans-2018.12/nbjavac/modules/org-netbeans-modules-nbjavac.jar
+coolbeans-2018.12/nbjavac/update_tracking/org-netbeans-modules-nbjavac-api.xml
+coolbeans-2018.12/nbjavac/update_tracking/org-netbeans-modules-nbjavac-impl.xml
+coolbeans-2018.12/nbjavac/update_tracking/org-netbeans-modules-nbjavac.xml
+@exec echo 'nbjavac' >> coolbeans-2018.12/etc/netbeans.clusters
+nbms/nb-javac/licenses/21A7B1AA.license
+nbms/nb-javac/org-netbeans-modules-nbjavac-api.nbm
+nbms/nb-javac/org-netbeans-modules-nbjavac-impl.nbm
+nbms/nb-javac/org-netbeans-modules-nbjavac.nbm
+nbms/nb-javac/updates.xml

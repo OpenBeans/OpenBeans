@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build" name="java/ro.emilianbold.modules.maven.search.remote/">
+    <description>Builds, tests, and runs the project ro.emilianbold.modules.maven.search.remote</description>
+    <import file="../../nbbuild/templates/projectized.xml"/>
+</project>

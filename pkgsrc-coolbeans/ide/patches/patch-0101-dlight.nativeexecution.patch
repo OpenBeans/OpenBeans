@@ -1,0 +1,12 @@
+diff --git a/ide/dlight.nativeexecution/nbproject/project.xml b/ide/dlight.nativeexecution/nbproject/project.xml
+index b08817dca..2eafb64dd 100644
+--- a/ide/dlight.nativeexecution/nbproject/project.xml
++++ b/ide/dlight.nativeexecution/nbproject/project.xml
+@@ -255,6 +255,7 @@
+                 <friend>org.netbeans.modules.cnd.debugger.dbx</friend>
+                 <friend>org.netbeans.modules.cnd.debugger.gdb2</friend>
+                 <friend>org.netbeans.modules.cnd.debugger.gdbserver</friend>
++                <friend>org.netbeans.modules.cnd.diagnostics.clank</friend>
+                 <friend>org.netbeans.modules.cnd.discovery</friend>
+                 <friend>org.netbeans.modules.cnd.dwarfdiscovery</friend>
+                 <friend>org.netbeans.modules.cnd.gizmo</friend>

@@ -1,0 +1,45 @@
+From d766035ecb7317862f2fd51c1491f1d889f5630c Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Sat, 8 Dec 2018 13:44:09 +0200
+Subject: [PATCH 23/32] Excludes LICENSE/NOTICE/DISCLAIMER from JARs META-INF
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ nbbuild/templates/projectized.xml | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/nbbuild/templates/projectized.xml b/nbbuild/templates/projectized.xml
+index 4cc1058eda..ce7a16eb3e 100644
+--- a/nbbuild/templates/projectized.xml
++++ b/nbbuild/templates/projectized.xml
+@@ -522,6 +522,7 @@ If you are sure you want to build with JDK 9+ anyway, use: -Dpermit.jdk9.builds=
+         <property name="module.name.temp" location="." />
+         <basename property="module.name" file="${module.name.temp}" />
+         <mkdir dir="${build.classes.dir}/META-INF" />
++<!-- EMI: Stop creating the license, notice and disclaimer file in every JAR
+         <createlicensesummary licenseStub="${nb_all}/LICENSE"
+                               noticeStub="${nb_all}/nbbuild/notice-stub.txt"
+                               nball="${nb_all}"
+@@ -544,6 +545,7 @@ If you are sure you want to build with JDK 9+ anyway, use: -Dpermit.jdk9.builds=
+              </tokenfilter>
+           </filterchain>
+         </concat>
++-->
+     </target>
+ 
+     <target name="jar" depends="-prepare-mandatory-files-for-module,projectized-common.jar" />
+-- 
+2.21.0
+

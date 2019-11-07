@@ -1,0 +1,71 @@
+#
+#  Copyright (c) 2018, 2019 Emilian Marius Bold
+#
+#  Permission to use, copy, modify, and distribute this software for any
+#  purpose with or without fee is hereby granted, provided that the above
+#  copyright notice and this permission notice appear in all copies.
+#
+#  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+#  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+#  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+#  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+#  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+#  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+#
+
+SHA256 (release111.zip) = 799ec9bbb263bab4d82744083c83af04c13dbff252f350467734c8ef0921e016
+
+SHA256 (netbeans-releases.zip) = 7f1e5c730235f0183b6d3ed30fdb90f86b74bf39bd45b1f6ac2c19a40e6213d3
+
+SHA256 (maven-search-remote.zip) = 3b4c7ece12c862d4cbb3f5bb503f95751ad74038dd362de7d2490bf7c3c33f5c
+
+SHA1 (patch-0001-Adds-CoolBeans-branding.patch) = 1451d1334e5628aadd367264f522fd1bd2f1eac8
+SHA1 (patch-0002-Enables-enterprise-cluster.patch) = cbf6e46398769d9ee2595f498e44a6d1de7ff379
+SHA1 (patch-0003-Changes-Update-Center-URLs.patch) = 81b46273f74d3e4a685ab39509208941a8533e33
+SHA1 (patch-0004-User-dir-and-caches.patch) = 49fc4210660f30754a706de82d5493b17195a404
+SHA1 (patch-0005-Support-relative-JRE-on-macOS.patch) = aa846ea84ca3a186508b896cc6704f98fe01a498
+SHA1 (patch-0006-Updates-metrics-info-URL.patch) = 331c88d8486eac364c6fca4d78b7f1fc29690308
+SHA1 (patch-0007-Bundle-jre.patch) = f04cbfa3521cc7e9c1923d916cc408c8226f853d
+SHA1 (patch-0008-Temporarily-exclude-welcome-module.patch) = 32ffd0089e96312193c1450fa5721df565e8d9c3
+SHA1 (patch-0009-All-right-reserved-in-about-box.patch) = c07e55071748df03cb7045184f5c2ddb64f4debf
+SHA1 (patch-0010-Hooks-uihandler-into-coolbeans.patch) = 328e330fff5399c181326699097f761d3037eeb0
+SHA1 (patch-0011-Do-not-open-Exception-Reporter-if-the-meta-refresh-u.patch) = 0fa3cb692309e9b20591d61e6bf8f4ac74e1fd5f
+SHA1 (patch-0012-Store-userdir-cache-in-2018.12-folder.patch) = 0c6399cad18ecd3576b2326d41134a63a974b6d8
+SHA1 (patch-0013-Using-old-version-of-modules-not-the-newer-ones-afte.patch) = 87738975e4f2ba1ab209b31dfef5b9b598595808
+SHA1 (patch-0014-Rename-output-folder-from-netbeans-to-coolbeans.patch) = e6984cc0d29e1241f3044becdcaf5ddde8b1c885
+SHA1 (patch-0015-Removes-dev-from-about-box-description-makes-splash-.patch) = ecd72c37970e60a8d0a32b86edb87effba173971
+SHA1 (patch-0016-Change-license-file.patch) = 79d973b3ec24ea9dc08eb0c43655e2fb42f50082
+SHA1 (patch-0017-Changes-the-report-issue-URL.patch) = 04476672f2d830b6f1ce5d054c30d90026559201
+SHA1 (patch-0018-Enables-netbeans.diff.default.compact-by-default.patch) = 302777eff1405a72d746008990976338e53dde96
+SHA1 (patch-0019-Excludes-release-toplevel-folder-which-has-README.ht.patch) = 3d635ebf41fecf6a873c8e94513073bd937859dd
+SHA1 (patch-0020-Backout-and-tweak-the-changeset-which-removed-Accept.patch) = a5ec937628b2107b08f032190ea2d52d36573020
+SHA1 (patch-0021-Use-CoolBeans-name-in-AcceptLicense.patch) = daf1d95a845e9723136204c144631ad11d57434b
+SHA1 (patch-0022-Adds-license-for-initial-accept-dialog.patch) = e42863d77d1ce7537fa96c3dd3903dea89eb62cb
+SHA1 (patch-0023-Excludes-LICENSE-NOTICE-DISCLAIMER-from-JARs-META-IN.patch) = 530ac19b5ea76ce5a4f3672d959147f1632a45af
+SHA1 (patch-0024-Fixes-the-8.2-Plugin-Portal-URL-and-sets-it-to-the-c.patch) = 2c9ae1bdc22f93dadb9887e8656b0730cef2318f
+SHA1 (patch-0025-Allows-a-direct-URL-in-the-external-dependency-file.patch) = f932809cbb1a9493f9f3ed95750d8d386173b325
+SHA1 (patch-0026-Includes-the-patches-profiler-DLLs-on-Windows-x64.patch) = dfd692c2eb348d6eebbcc54d30aae05f5ff4a6ef
+SHA1 (patch-0027-Warn-macOS-users-about-AppTranslocation.patch) = e4e44245b69ccdadaccbb540e0ee9634ec0849e5
+SHA1 (patch-0028-Add-2018.12-to-the-list-of-imported-settings.-This-w.patch) = 7a503725c96b5711074e0465b88c29334a704d87
+SHA1 (patch-0029-Updates-launcher-cache-user-dir-and-version-info.patch) = b7dc17ffb8ec2b23ad254efb3c81c736cf72ffdd
+SHA1 (patch-0030-Include-JavaFX-libraries-directly.patch) = 98eb82f948f6edbe647d5cb649777fb79c1756bf
+SHA1 (patch-0031-Merge-pull-request-1400-from-apache-php7.4.patch) = 18214250873470aa603691087d02df39a1efa39a
+SHA1 (patch-0032-Bump-php.kit-version-and-php.editor-implementation-v.patch) = 6e36cd77d4c654792776e1ed1c5cc9a2f11fda31
+
+SHA1 (patch-0050-wildfly.patch) = 18a90ba4d547f55d979f77f1ee67f29e02b4c907
+
+SHA1 (patch-0101-dlight.nativeexecution.patch) = 1b07c993eed0d9afedd32b8dd8cc2f0f55e8c3a5
+SHA1 (patch-0102-code.analysis.patch) = 8288bc4af26fb5e15ad81c7a36a95e6580426c1f
+SHA1 (patch-0103-cdn-cluster.patch) = 209574afd1a9345588498872e3f0d80fa0435bad
+SHA1 (patch-0150-dlight.patch) = 8821fee54daf49bb1eda00ea8fb3fdc1902dca77
+
+SHA1 (patch-0151-cnd.patch) = fe784f51fdbd1e8a1e4f56009dbff2870c0c4aae
+SHA1 (patch-0152-cndext.patch) = 6e3e502a98ea8131350ac92f7f1288428f01d152
+
+SHA1 (patch-0200-maven.search.remote.patch) = 7c5624cc5d40fbe516a2471e64d168e37ad15265
+SHA1 (patch-0201-not-standalone.patch) = 4d72f75f753607d55dba8ff6325d93e1696189c9
+
+SHA1 (patch-0300-notification-friends.patch) = f078653d33de5844b891a6abe23deccd9adf648b
+SHA1 (patch-0301-notification-on-build.patch) = 601a4563c9525afa1525c6df45c3335ecc4e9ed0
+SHA1 (patch-0302-notification-module.patch) = a7f2c62e10d07453f892022583f005fb88b4ef1f

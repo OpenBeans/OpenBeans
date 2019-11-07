@@ -1,0 +1,54 @@
+From cb8c435a6a78bb1c71df80f5870868be350e4db1 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Tue, 11 Jun 2019 12:31:22 +0300
+Subject: [PATCH 28/32] Add 2018.12 to the list of imported settings. This will
+ only work for CoolBeans installs or on Windows where we use the same NetBeans
+ dirs
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ .../netbeans/modules/autoupdate/pluginimporter/Installer.java   | 2 +-
+ nb/o.n.upgrader/src/org/netbeans/upgrade/AutoUpgrade.java       | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/nb/autoupdate.pluginimporter/src/org/netbeans/modules/autoupdate/pluginimporter/Installer.java b/nb/autoupdate.pluginimporter/src/org/netbeans/modules/autoupdate/pluginimporter/Installer.java
+index 42852a2946..62d33a16e2 100644
+--- a/nb/autoupdate.pluginimporter/src/org/netbeans/modules/autoupdate/pluginimporter/Installer.java
++++ b/nb/autoupdate.pluginimporter/src/org/netbeans/modules/autoupdate/pluginimporter/Installer.java
+@@ -51,7 +51,7 @@ public class Installer extends ModuleInstall {
+     private static final List<String> VERSION_TO_CHECK =
+             Arrays.asList (".netbeans/7.1.2", ".netbeans/7.1.1", ".netbeans/7.1", ".netbeans/7.0", ".netbeans/6.9"); //NOI18N
+     private static final List<String> NEWER_VERSION_TO_CHECK =
+-            Arrays.asList ("11.0", "10.0", "9.0", "8.2", "8.1", "8.0.2", "8.0.1", "8.0", "7.4", "7.3.1", "7.3", "7.2.1", "7.2"); //NOI18N
++            Arrays.asList ("2018.12", "11.0", "10.0", "9.0", "8.2", "8.1", "8.0.2", "8.0.1", "8.0", "7.4", "7.3.1", "7.3", "7.2.1", "7.2"); //NOI18N
+     private static final String IMPORTED = "imported"; // NOI18N
+ 
+     @Override
+diff --git a/nb/o.n.upgrader/src/org/netbeans/upgrade/AutoUpgrade.java b/nb/o.n.upgrader/src/org/netbeans/upgrade/AutoUpgrade.java
+index 0d872798a5..ffa4bc3ca0 100644
+--- a/nb/o.n.upgrader/src/org/netbeans/upgrade/AutoUpgrade.java
++++ b/nb/o.n.upgrader/src/org/netbeans/upgrade/AutoUpgrade.java
+@@ -93,7 +93,7 @@ public final class AutoUpgrade {
+     
+     // userdir on OS specific root of userdir (see issue 196075)
+     static final List<String> NEWER_VERSION_TO_CHECK =
+-            Arrays.asList ("11.0", "10.0", "9.0", "8.2", "8.1", "8.0.2", "8.0.1", "8.0", "7.4", "7.3.1", "7.3", "7.2.1", "7.2"); //NOI18N
++            Arrays.asList ("2018.12", "11.0", "10.0", "9.0", "8.2", "8.1", "8.0.2", "8.0.1", "8.0", "7.4", "7.3.1", "7.3", "7.2.1", "7.2"); //NOI18N
+ 
+             
+     private static File checkPreviousOnOsSpecificPlace (final List<String> versionsToCheck) {
+-- 
+2.21.0
+

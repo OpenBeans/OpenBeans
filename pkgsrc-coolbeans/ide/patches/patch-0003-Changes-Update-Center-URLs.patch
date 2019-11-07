@@ -1,0 +1,60 @@
+From cb84c263109a21cb3c0bb9ea8ae6ec693a70b1eb Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Mon, 5 Nov 2018 19:12:22 +0200
+Subject: [PATCH 03/32] Changes Update Center URLs
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ .../modules/updatecenters/resources/Bundle.properties       | 6 +++---
+ .../netbeans/modules/updatecenters/resources/mf-layer.xml   | 2 +-
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/Bundle.properties b/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/Bundle.properties
+index ba0a024f8e..be7af9095f 100644
+--- a/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/Bundle.properties
++++ b/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/Bundle.properties
+@@ -24,13 +24,13 @@ OpenIDE-Module-Long-Description=It's module which contains the declaration of Co
+ OpenIDE-Module-Short-Description=Declares CoolBeans autoupdate centers.
+ 
+ Services/AutoupdateType/distribution-update-provider.instance=CoolBeans Distribution
+-Services/AutoupdateType/pluginportal-update-provider.instance=Plugin Portal
++Services/AutoupdateType/pluginportal-update-provider.instance=CoolBeans Plugin Portal
+ Services/AutoupdateType/82pluginportal-update-provider.instance=CoolBeans 8.2 Plugin Portal
+ 
+ #NOI18N
+-URL_Distribution=https://netbeans.apache.org/nb/updates/11.1/updates.xml.gz?{$netbeans.hash.code}
++URL_Distribution=https://coolbeans.xyz/nb/updates/2019.06/updates.xml.gz?{$netbeans.hash.code}
+ #NOI18N
+-URL_PluginPortal=https://netbeans.apache.org/nb/plugins/11.1/catalog.xml.gz
++URL_PluginPortal=https://coolbeans.xyz/nbpluginportal/updates/2019.06/catalog.xml.gz
+ #NOI18N
+ URL_82PluginPortal=http://updates.netbeans.org/netbeans/updates/8.2/uc/final/distribution/catalog.xml.gz
+ 
+diff --git a/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/mf-layer.xml b/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/mf-layer.xml
+index de190a3bfd..0d3e1f2b04 100644
+--- a/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/mf-layer.xml
++++ b/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/mf-layer.xml
+@@ -49,7 +49,7 @@
+           <attr name="displayName" bundlevalue="org.netbeans.modules.updatecenters.resources.Bundle#Services/AutoupdateType/82pluginportal-update-provider.instance"/>
+           <attr name="iconBase" stringvalue="org/netbeans/modules/updatecenters/resources/updateAction.gif"/>
+           <attr name="url" bundlevalue="org.netbeans.modules.updatecenters.resources.Bundle#URL_82PluginPortal"/>
+-          <attr name="category" stringvalue="STANDARD"/>
++          <attr name="category" stringvalue="BETA"/>
+           <attr name="enabled" boolvalue="false"/>
+           <attr name="instanceOf" stringvalue="org.netbeans.spi.autoupdate.UpdateProvider"/>
+           <attr name="instanceCreate" methodvalue="org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogFactory.createUpdateProvider"/>
+-- 
+2.21.0
+

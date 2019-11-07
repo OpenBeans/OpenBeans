@@ -1,0 +1,10 @@
+--- a/java/ro.emilianbold.modules.maven.search.remote/nbproject/project.xml.orig	2019-02-19 21:41:37.000000000 +0200
++++ b/java/ro.emilianbold.modules.maven.search.remote/nbproject/project.xml	2019-02-19 21:41:46.000000000 +0200
+@@ -4,7 +4,6 @@
+     <configuration>
+         <data xmlns="http://www.netbeans.org/ns/nb-module-project/3">
+             <code-name-base>ro.emilianbold.modules.maven.search.remote</code-name-base>
+-            <standalone/>
+             <module-dependencies>
+                 <dependency>
+                     <code-name-base>org.netbeans.api.progress</code-name-base>

@@ -1,0 +1,41 @@
+From 120e88ee7227e86b06689caf0fe80c8b049c4a20 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Tue, 6 Nov 2018 11:15:44 +0200
+Subject: [PATCH 05/32] Support relative JRE on macOS
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ platform/o.n.bootstrap/launcher/unix/nbexec | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/platform/o.n.bootstrap/launcher/unix/nbexec b/platform/o.n.bootstrap/launcher/unix/nbexec
+index df47fa01ef..f51949a252 100644
+--- a/platform/o.n.bootstrap/launcher/unix/nbexec
++++ b/platform/o.n.bootstrap/launcher/unix/nbexec
+@@ -164,6 +164,11 @@ if [ -z "$jdkhome" ] ; then
+     esac
+ fi
+ 
++if [ `echo ${jdkhome} | grep '^\.'` ]; then
++    #relative path
++    jdkhome=`echo "${plathome}"/"${jdkhome}"`;
++fi;
++
+ if [ ! -x "${jdkhome}/bin/java" ] ; then
+     echo "Cannot find java. Please use the --jdkhome switch." >&2
+     exit 2
+-- 
+2.21.0
+

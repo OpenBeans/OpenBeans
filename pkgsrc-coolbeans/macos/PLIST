@@ -1,0 +1,4 @@
+@comment $NetBSD$
+macos/CoolBeans.app.tgz
+macos/sign-macos.sh
+zip/CoolBeans.tgz

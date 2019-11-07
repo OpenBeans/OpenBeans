@@ -1,0 +1,24 @@
+diff --git a/contrib/javaee.wildfly/external/binaries-list b/contrib/javaee.wildfly/external/binaries-list
+index 415c03f62..8719babe3 100644
+--- a/contrib/javaee.wildfly/external/binaries-list
++++ b/contrib/javaee.wildfly/external/binaries-list
+@@ -15,5 +15,7 @@
+ # specific language governing permissions and limitations
+ # under the License.
+ 
++8859ED09DF034476CC6B47C9B991D65E78078A90 javaee-wildfly-glassfish-resources.zip
+ 4C29DE96843375053399E0869CA0FD147272ABFA javaee-wildfly-ironjacamar-resources.zip
+ 91F3DB873E1EE50E5514877F8539E503F7135041 javaee-wildfly-jboss-resources.zip
++6ED21E1893402130E3CFDC7F7D446395CF1B0B17 javaee-wildfly-w3c-resources.zip
+diff --git a/nbbuild/cluster.properties b/nbbuild/cluster.properties
+index c8a690a5c..fc8cb104f 100644
+--- a/nbbuild/cluster.properties
++++ b/nbbuild/cluster.properties
+@@ -746,6 +746,7 @@ nb.cluster.enterprise=\
+         api.web.webmodule,\
+         cloud.amazon,\
+         cloud.common,\
++        contrib/javaee.wildfly,\
+         el.lexer,\
+         glassfish.common,\
+         glassfish.eecommon,\

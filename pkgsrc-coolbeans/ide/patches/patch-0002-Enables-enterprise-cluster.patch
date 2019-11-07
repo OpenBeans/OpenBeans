@@ -1,0 +1,37 @@
+From c49d6e8e441e04372b75616b63654c31bcba6156 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Mon, 5 Nov 2018 12:59:06 +0200
+Subject: [PATCH 02/32] Enables enterprise cluster
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ nbbuild/cluster.properties | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/nbbuild/cluster.properties b/nbbuild/cluster.properties
+index 5a2071f411..f33725d7b2 100644
+--- a/nbbuild/cluster.properties
++++ b/nbbuild/cluster.properties
+@@ -23,6 +23,7 @@ clusters.config.release.list=\
+         ${clusters.config.java.list},\
+         nb.cluster.apisupport,\
+         nb.cluster.webcommon,\
++        nb.cluster.enterprise,\
+         nb.cluster.php,\
+         nb.cluster.groovy,\
+         nb.cluster.enterprise,\
+-- 
+2.21.0
+

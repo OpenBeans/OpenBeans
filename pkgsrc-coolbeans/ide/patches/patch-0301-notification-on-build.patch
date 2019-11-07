@@ -1,0 +1,37 @@
+diff --git a/ide/projectuiapi/src/org/netbeans/spi/project/ui/support/BuildExecutionSupport.java b/ide/projectuiapi/src/org/netbeans/spi/project/ui/support/BuildExecutionSupport.java
+index 4904bd3a2..369b9348d 100644
+--- a/ide/projectuiapi/src/org/netbeans/spi/project/ui/support/BuildExecutionSupport.java
++++ b/ide/projectuiapi/src/org/netbeans/spi/project/ui/support/BuildExecutionSupport.java
+@@ -19,9 +19,12 @@
+ 
+ package org.netbeans.spi.project.ui.support;
+ 
++import java.awt.event.ActionListener;
++import javax.swing.ImageIcon;
+ import javax.swing.event.ChangeListener;
+ import org.netbeans.modules.project.uiapi.BuildExecutionSupportImplementation;
+ import org.netbeans.modules.project.uiapi.Utilities;
++import org.openide.awt.NotificationDisplayer;
+ import org.openide.filesystems.FileObject;
+ 
+ /**
+@@ -44,6 +47,9 @@ public final class BuildExecutionSupport {
+      */
+     public static void registerRunningItem(BuildExecutionSupport.Item item) {
+         Utilities.getBuildExecutionSupportImplementation().registerRunningItem(item);
++
++        boolean isFinishedItem = false;
++        NotificationDisplayer.getDefault().notify(String.valueOf(item.getDisplayName()), new ImageIcon(), item.getDisplayName() + " " + (isFinishedItem ? " finished" : "running"), (ActionListener) null);
+     }
+ 
+     /**
+@@ -55,6 +61,9 @@ public final class BuildExecutionSupport {
+      */
+     public static void registerFinishedItem(BuildExecutionSupport.Item item) {
+         Utilities.getBuildExecutionSupportImplementation().registerFinishedItem(item);
++
++        boolean isFinishedItem = true;
++        NotificationDisplayer.getDefault().notify(String.valueOf(item.getDisplayName()), new ImageIcon(), item.getDisplayName() + " " + (isFinishedItem ? " finished" : "running"), (ActionListener) null);
+     }
+ 
+     /**
