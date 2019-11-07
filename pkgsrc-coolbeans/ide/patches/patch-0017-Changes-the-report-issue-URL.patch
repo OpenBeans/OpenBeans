@@ -1,0 +1,38 @@
+From 3d5363482521927290edc7f7d2721f3d18b6fc37 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Fri, 9 Nov 2018 09:17:37 +0200
+Subject: [PATCH 17/32] Changes the report issue URL
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ .../modules/bugzilla/exceptionreporter/ReportNBIssueAction.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/nb/bugzilla.exceptionreporter/src/org/netbeans/modules/bugzilla/exceptionreporter/ReportNBIssueAction.java b/nb/bugzilla.exceptionreporter/src/org/netbeans/modules/bugzilla/exceptionreporter/ReportNBIssueAction.java
+index 5a18429261..9699daa760 100644
+--- a/nb/bugzilla.exceptionreporter/src/org/netbeans/modules/bugzilla/exceptionreporter/ReportNBIssueAction.java
++++ b/nb/bugzilla.exceptionreporter/src/org/netbeans/modules/bugzilla/exceptionreporter/ReportNBIssueAction.java
+@@ -40,7 +40,7 @@ import org.openide.util.NbBundle;
+ @ActionReference(path = "Menu/Help", position = 450)
+ public class ReportNBIssueAction extends SystemAction {
+ 
+-    private static final String ISSUE_REPORTER_LINK="https://netbeans.apache.org/nb/report-issue";
++    private static final String ISSUE_REPORTER_LINK="http://coolbeans.xyz/report-issue";
+ 
+     public ReportNBIssueAction() {
+         setIcon(null);
+-- 
+2.21.0
+

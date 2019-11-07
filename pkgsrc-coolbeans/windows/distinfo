@@ -1,0 +1,18 @@
+#
+#  Copyright (c) 2018, 2019 Emilian Marius Bold
+#
+#  Permission to use, copy, modify, and distribute this software for any
+#  purpose with or without fee is hereby granted, provided that the above
+#  copyright notice and this permission notice appear in all copies.
+#
+#  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+#  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+#  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+#  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+#  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+#  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+#
+
+SHA256 (OpenJDK11U-jdk_x64_windows_hotspot_11.0.3_7.zip) = d653cc3910c48b01e1523b59ec881fe5f9104c11fcc16dcac99ee10003f7aef0
+SHA256 (OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.3_7.zip) = fe2ef3096432b3de6be7b554250be7dfb94868d11f3c6341fa6d902edafc3e3b

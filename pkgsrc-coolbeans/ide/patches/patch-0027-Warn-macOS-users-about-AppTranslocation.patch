@@ -1,0 +1,65 @@
+From 7deb548dfeb90627faf5016d574ae0ecb9f39d15 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Mon, 10 Jun 2019 23:16:39 +0300
+Subject: [PATCH 27/32] Warn macOS users about AppTranslocation
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ .../netbeans/modules/applemenu/Install.java   | 20 +++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+
+diff --git a/platform/applemenu/src/org/netbeans/modules/applemenu/Install.java b/platform/applemenu/src/org/netbeans/modules/applemenu/Install.java
+index e848b2e4e0..47a2f9ce0f 100644
+--- a/platform/applemenu/src/org/netbeans/modules/applemenu/Install.java
++++ b/platform/applemenu/src/org/netbeans/modules/applemenu/Install.java
+@@ -22,8 +22,12 @@ package org.netbeans.modules.applemenu;
+ import java.awt.AWTEvent;
+ import java.awt.Toolkit;
+ import java.lang.reflect.*;
++import org.openide.awt.Notification;
++import org.openide.awt.NotificationDisplayer;
+ import org.openide.modules.ModuleInstall;
++import org.openide.util.ImageUtilities;
+ import org.openide.util.Utilities;
++import org.openide.windows.WindowManager;
+ 
+ /** Module installer that installs listeners, which will interpret
+  * apple events and call the appropriate action from the actions pool.
+@@ -48,6 +52,22 @@ public class Install extends ModuleInstall {
+                 installAdapter("org.netbeans.modules.applemenu.NbApplicationAdapterJDK9");      // NOI18N
+             }
+         }
++
++        WindowManager.getDefault().invokeWhenUIReady(new Runnable() {
++            @Override
++            public void run() {
++                String javaHome = System.getProperty("java.home"); //NOI18N
++                //we know we are on macOS already
++                if (javaHome != null && javaHome.contains("AppTranslocation")) { //NOI18N
++                    //TODO: L10N
++                    NotificationDisplayer.getDefault().notify(
++                            "macOS sandbox detected",
++                            ImageUtilities.loadImageIcon("org/netbeans/core/startup/frame48.gif", true),
++                            "Please copy CoolBeans into /Applications or some other folder. The IDE might not work properly while sandboxed by macOS.",
++                            null);
++                }
++            }
++        });
+     }
+ 
+     private boolean installAdapter(String className) {
+-- 
+2.21.0
+

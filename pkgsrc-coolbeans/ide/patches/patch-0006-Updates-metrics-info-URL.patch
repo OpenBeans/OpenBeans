@@ -1,0 +1,56 @@
+From c7aaf227cd4439a613db2dedab57d7c8825d4124 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Tue, 6 Nov 2018 12:44:46 +0200
+Subject: [PATCH 06/32] Updates metrics info URL
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ .../org/netbeans/core/ui/options/general/Bundle.properties  | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/platform/core.ui/src/org/netbeans/core/ui/options/general/Bundle.properties b/platform/core.ui/src/org/netbeans/core/ui/options/general/Bundle.properties
+index cfec33b8ea..52e3d5aa4c 100644
+--- a/platform/core.ui/src/org/netbeans/core/ui/options/general/Bundle.properties
++++ b/platform/core.ui/src/org/netbeans/core/ui/options/general/Bundle.properties
+@@ -50,7 +50,7 @@ AN_Learn_More=Learn more
+ AD_Learn_More=Learn more
+ 
+ #NOI18N
+-METRICS_INFO_URL=http://www.netbeans.org/about/usage-tracking.html
++METRICS_INFO_URL=http://coolbeans.xyz/about/usage-tracking.html
+ 
+ CTL_Use_System_Proxy_Settings=&Use System Proxy Settings
+ AN_Use_System_Proxy_Settings=Use System Proxy Settings
+@@ -123,7 +123,7 @@ AD_NonProxy=No Proxy For
+ 
+ CTL_Non_Proxy=No Prox&y For\:
+ 
+-Non_Proxy_Hint=(e.g. localhost, *.netbeans.org, *.mydomain.com)
++Non_Proxy_Hint=(e.g. localhost, *.mydomain.com)
+ LBL_GeneralOptionsPanel_bMoreProxy=M&ore...
+ LBL_GeneralOptionsPanel_bMoreProxy.AN=Advanced Proxy Settings
+ LBL_GeneralOptionsPanel_bMoreProxy.AD=Open Advanced Proxy Settings
+@@ -134,7 +134,7 @@ LBL_GeneralOptionsPanel_lWebProxy=Proxy Settings\:
+ 
+ LBL_AdvancedProxyPanel_lHttpProxyHost=HTTP &Proxy\:
+ 
+-LBL_AdvancedProxyPanel_lNonProxyHostsDescription=(e.g. localhost, *.netbeans.org, 127.0.0.1)
++LBL_AdvancedProxyPanel_lNonProxyHostsDescription=(e.g. localhost, 127.0.0.1)
+ 
+ LBL_AdvancedProxyPanel_lHttpProxyPort=P&ort\:
+ 
+-- 
+2.21.0
+

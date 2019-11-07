@@ -1,0 +1,783 @@
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd/build.xml cnd/cnd/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd/build.xml	2019-02-08 14:30:01.000000000 +0200
+@@ -47,10 +47,10 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd" default="netbeans" basedir=".">
++<project name="cnd/cnd" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.</description>
+     <property name="javahelp.base" value="org/netbeans/modules/cnd/help"/>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ 
+     <target name="netbeans" depends="projectized.netbeans">
+ 	<fixcrlf srcdir="${cluster}/bin" includes="dorun.sh" eol="lf"/>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.analysis.api/build.xml cnd/cnd.analysis.api/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.analysis.api/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.analysis.api/build.xml	2019-02-08 14:30:01.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.analysis.api">
++<project basedir="." default="netbeans" name="cnd/cnd.analysis.api">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.analysis.api</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.analysis.impl/build.xml cnd/cnd.analysis.impl/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.analysis.impl/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.analysis.impl/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.analysis.impl">
++<project basedir="." default="netbeans" name="cnd/cnd.analysis.impl">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.analysis.impl</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.antlr/build.xml cnd/cnd.antlr/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.antlr/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.antlr/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -42,7 +42,7 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.antlr" default="netbeans" basedir=".">
++<project name="cnd/cnd.antlr" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.antlr.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.api.model/build.xml cnd/cnd.api.model/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.api.model/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.api.model/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -46,7 +46,7 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.api.model" default="netbeans" basedir=".">
++<project name="cnd/cnd.api.model" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.api.model.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.api.project/build.xml cnd/cnd.api.project/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.api.project/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.api.project/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.api.project">
++<project basedir="." default="netbeans" name="cnd/cnd.api.project">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.api.project</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.api.remote/build.xml cnd/cnd.api.remote/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.api.remote/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.api.remote/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.api.remote">
++<project basedir="." default="netbeans" name="cnd/cnd.api.remote">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.api.remote</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.api.remote.ui/build.xml cnd/cnd.api.remote.ui/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.api.remote.ui/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.api.remote.ui/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.api.remote.ui">
++<project basedir="." default="netbeans" name="cnd/cnd.api.remote.ui">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.api.remote.ui</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.apt/build.xml cnd/cnd.apt/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.apt/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.apt/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -46,9 +46,9 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.apt" default="netbeans" basedir=".">
++<project name="cnd/cnd.apt" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.apt.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+     
+     <target name="compile" depends="antlr,projectized-common.compile">
+     </target>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.asm/build.xml cnd/cnd.asm/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.asm/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.asm/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -43,10 +43,10 @@
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+ 
+-<project name="cnd.asm" default="netbeans" basedir=".">
++<project name="cnd/cnd.asm" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.asm.</description>
+ 
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ 
+     <target name="compile" depends="antlr,projectized-common.compile">
+     </target>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.callgraph/build.xml cnd/cnd.callgraph/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.callgraph/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.callgraph/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.callgraph">
++<project basedir="." default="netbeans" name="cnd/cnd.callgraph">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.callgraph</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.classview/build.xml cnd/cnd.classview/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.classview/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.classview/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -47,9 +47,9 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.classview" default="netbeans" basedir=".">
++<project name="cnd/cnd.classview" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.classview.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+     
+     <target name="do-test-build" depends="-build-cnd-tests,projectized-common.do-test-build">
+     </target>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.cncppunit/build.xml cnd/cnd.cncppunit/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.cncppunit/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.cncppunit/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -41,7 +41,7 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.cncppunit" default="netbeans" basedir=".">
++<project name="cnd/cnd.cncppunit" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project cnd.cncppunit.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.completion/build.xml cnd/cnd.completion/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.completion/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.completion/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -46,9 +46,9 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.completion" default="netbeans" basedir=".">
++<project name="cnd/cnd.completion" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.completion.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ 
+     <!-- SmartCompletionInQuoteTestCase wants Quote sources -->
+ 
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.debugger.common2/build.xml cnd/cnd.debugger.common2/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.debugger.common2/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.debugger.common2/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,9 +38,9 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.debugger.common2">
++<project basedir="." default="netbeans" name="cnd/cnd.debugger.common2">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.debugger.common2</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ 
+     <target name="netbeans-extra">
+         <mkdir dir="${cluster}/bin"/>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.debugger.dbx/build.xml cnd/cnd.debugger.dbx/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.debugger.dbx/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.debugger.dbx/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,9 +38,9 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.debugger.dbx">
++<project basedir="." default="netbeans" name="cnd/cnd.debugger.dbx">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.debugger.dbx</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ 
+ <!--    <property name="glic.output.dir" value="com/sun/tools/swdev"/>
+ 
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.debugger.gdb2/build.xml cnd/cnd.debugger.gdb2/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.debugger.gdb2/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.debugger.gdb2/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.debugger.gdb2">
++<project basedir="." default="netbeans" name="cnd/cnd.debugger.gdb2">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.debugger.gdb2</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.diagnostics.clank/build.xml cnd/cnd.diagnostics.clank/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.diagnostics.clank/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.diagnostics.clank/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<project basedir="." default="netbeans" name="cnd.diagnostics.clank">
++<project basedir="." default="netbeans" name="cnd/cnd.diagnostics.clank">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.diagnostics.clank</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.discovery/build.xml cnd/cnd.discovery/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.discovery/build.xml	2018-12-09 11:41:17.000000000 +0200
++++ b/cnd/cnd.discovery/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -41,7 +41,7 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.discovery" default="netbeans" basedir=".">
++<project name="cnd/cnd.discovery" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.discovery.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.dwarfdiscovery/build.xml cnd/cnd.dwarfdiscovery/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.dwarfdiscovery/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.dwarfdiscovery/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -41,9 +41,9 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.dwarfdiscovery" default="netbeans" basedir=".">
++<project name="cnd/cnd.dwarfdiscovery" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.dwarfdiscovery.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ 
+     <!--target name="do-unit-test-build" depends="projectized-common.do-unit-test-build,unzip-cnd-test-data"/>
+ 
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.dwarfdump/build.xml cnd/cnd.dwarfdump/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.dwarfdump/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.dwarfdump/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -41,7 +41,7 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.dwarfdump" default="netbeans" basedir=".">
++<project name="cnd/cnd.dwarfdump" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.dwarfdump.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.editor/build.xml cnd/cnd.editor/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.editor/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.editor/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.editor">
++<project basedir="." default="netbeans" name="cnd/cnd.editor">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.editor</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.gotodeclaration/build.xml cnd/cnd.gotodeclaration/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.gotodeclaration/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.gotodeclaration/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -41,9 +41,9 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.gotodeclaration" default="netbeans" basedir=".">
++<project name="cnd/cnd.gotodeclaration" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.gotodeclaration.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ 
+     <!-- CppSymbolBaseTestCase wants Quote sources -->
+ 
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.highlight/build.xml cnd/cnd.highlight/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.highlight/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.highlight/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -41,7 +41,7 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.highlight" default="netbeans" basedir=".">
++<project name="cnd/cnd.highlight" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.highlight.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.indexing/build.xml cnd/cnd.indexing/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.indexing/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.indexing/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.indexing">
++<project basedir="." default="netbeans" name="cnd/cnd.indexing">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.indexing</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.kit/build.xml cnd/cnd.kit/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.kit/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.kit/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.kit">
++<project basedir="." default="netbeans" name="cnd/cnd.kit">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.kit</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.lexer/build.xml cnd/cnd.lexer/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.lexer/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.lexer/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.lexer">
++<project basedir="." default="netbeans" name="cnd/cnd.lexer">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.lexer</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.makeproject/build.xml cnd/cnd.makeproject/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.makeproject/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.makeproject/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -46,9 +46,9 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.makeproject" default="netbeans" basedir=".">
++<project name="cnd/cnd.makeproject" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.makeproject.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+     
+     <!-- zip up samples before creating the jar file -->
+     <property name="sample-src" value="samples_src"/>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.makeproject.source.bridge/build.xml cnd/cnd.makeproject.source.bridge/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.makeproject.source.bridge/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.makeproject.source.bridge/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.makeproject.source.bridge">
++<project basedir="." default="netbeans" name="cnd/cnd.makeproject.source.bridge">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.makeproject.source.bridge</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.makeproject.ui/build.xml cnd/cnd.makeproject.ui/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.makeproject.ui/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.makeproject.ui/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.makeproject.ui">
++<project basedir="." default="netbeans" name="cnd/cnd.makeproject.ui">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.makeproject.ui</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.model.jclank.bridge/build.xml cnd/cnd.model.jclank.bridge/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.model.jclank.bridge/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.model.jclank.bridge/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.model.jclank.bridge">
++<project basedir="." default="netbeans" name="cnd/cnd.model.jclank.bridge">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.model.jclank.bridge</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.model.services/build.xml cnd/cnd.model.services/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.model.services/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.model.services/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -41,7 +41,7 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.model.services" default="netbeans" basedir=".">
++<project name="cnd/cnd.model.services" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.model.services.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.modeldiscovery/build.xml cnd/cnd.modeldiscovery/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.modeldiscovery/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.modeldiscovery/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -41,7 +41,7 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.modeldiscovery" default="netbeans" basedir=".">
++<project name="cnd/cnd.modeldiscovery" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.modeldiscovery.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.modelimpl/build.xml cnd/cnd.modelimpl/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.modelimpl/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.modelimpl/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -46,9 +46,9 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.modelimpl" default="netbeans" basedir=".">
++<project name="cnd/cnd.modelimpl" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.modelimpl.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+     
+     <target name="compile" depends="antlr,projectized-common.compile">
+         <!-- XXX do not modify perms on source files!
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.modelui/build.xml cnd/cnd.modelui/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.modelui/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.modelui/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -41,7 +41,7 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.modelui" default="netbeans" basedir=".">
++<project name="cnd/cnd.modelui" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.modelui.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.modelutil/build.xml cnd/cnd.modelutil/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.modelutil/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.modelutil/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -46,7 +46,7 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.modelutil" default="netbeans" basedir=".">
++<project name="cnd/cnd.modelutil" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.modelutil.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.navigation/build.xml cnd/cnd.navigation/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.navigation/build.xml	2018-12-09 11:41:18.000000000 +0200
++++ b/cnd/cnd.navigation/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.navigation">
++<project basedir="." default="netbeans" name="cnd/cnd.navigation">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.navigation</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.qnavigator/build.xml cnd/cnd.qnavigator/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.qnavigator/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.qnavigator/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -46,7 +46,7 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.qnavigator" default="netbeans" basedir=".">
++<project name="cnd/cnd.qnavigator" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.qnavigator.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.refactoring/build.xml cnd/cnd.refactoring/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.refactoring/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.refactoring/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -41,9 +41,9 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.refactoring" default="netbeans" basedir=".">
++<project name="cnd/cnd.refactoring" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.refactoring.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ 
+     <!-- RefactoringBaseTestCase wants Quote sources -->
+ 
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.remote/build.xml cnd/cnd.remote/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.remote/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.remote/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,9 +38,9 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.remote">
++<project basedir="." default="netbeans" name="cnd/cnd.remote">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.remote</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ 
+     <property name="binaries.dir" value="release/bin"/>
+     <property name="binaries.zip" value="external/cnd-rfs-1.0.zip"/>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.remote.projectui/build.xml cnd/cnd.remote.projectui/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.remote.projectui/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.remote.projectui/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.remote.projectui">
++<project basedir="." default="netbeans" name="cnd/cnd.remote.projectui">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.remote.projectui</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.remote.ui/build.xml cnd/cnd.remote.ui/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.remote.ui/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.remote.ui/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.remote.ui">
++<project basedir="." default="netbeans" name="cnd/cnd.remote.ui">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.remote.ui</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.repository/build.xml cnd/cnd.repository/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.repository/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.repository/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -41,9 +41,9 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.repository" default="netbeans" basedir=".">
++<project name="cnd/cnd.repository" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.repository.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ 
+     <target name="do-test-build" depends="-build-cnd-tests,projectized-common.do-test-build">
+     </target>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.repository.api/build.xml cnd/cnd.repository.api/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.repository.api/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.repository.api/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -41,7 +41,7 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.repository.api" default="netbeans" basedir=".">
++<project name="cnd/cnd.repository.api" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.repository.api.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.script/build.xml cnd/cnd.script/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.script/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.script/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.script">
++<project basedir="." default="netbeans" name="cnd/cnd.script">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.script</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.search/build.xml cnd/cnd.search/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.search/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.search/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.search">
++<project basedir="." default="netbeans" name="cnd/cnd.search">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.search</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.simpleunit/build.xml cnd/cnd.simpleunit/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.simpleunit/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.simpleunit/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.simpleunit">
++<project basedir="." default="netbeans" name="cnd/cnd.simpleunit">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.simpleunit</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.source/build.xml cnd/cnd.source/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.source/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.source/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.source">
++<project basedir="." default="netbeans" name="cnd/cnd.source">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.source</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.spellchecker.bindings/build.xml cnd/cnd.spellchecker.bindings/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.spellchecker.bindings/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.spellchecker.bindings/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -46,7 +46,7 @@
+ <!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+ <!-- for some information on what you could do (e.g. targets to override). -->
+ <!-- If you delete this file and reopen the project it will be recreated. -->
+-<project name="cnd.spellchecker.bindings" default="netbeans" basedir=".">
++<project name="cnd/cnd.spellchecker.bindings" default="netbeans" basedir=".">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.spellchecker.bindings.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.testrunner/build.xml cnd/cnd.testrunner/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.testrunner/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.testrunner/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.testrunner">
++<project basedir="." default="netbeans" name="cnd/cnd.testrunner">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.testrunner</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.toolchain/build.xml cnd/cnd.toolchain/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.toolchain/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.toolchain/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.toolchain">
++<project basedir="." default="netbeans" name="cnd/cnd.toolchain">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.toolchain</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.toolchain.ui/build.xml cnd/cnd.toolchain.ui/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.toolchain.ui/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.toolchain.ui/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.toolchain.ui">
++<project basedir="." default="netbeans" name="cnd/cnd.toolchain.ui">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.toolchain.ui</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.ui/build.xml cnd/cnd.ui/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.ui/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.ui/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.ui">
++<project basedir="." default="netbeans" name="cnd/cnd.ui">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.ui</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.utils/build.xml cnd/cnd.utils/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.utils/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.utils/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.utils">
++<project basedir="." default="netbeans" name="cnd/cnd.utils">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.utils</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/cnd.utils.ui/build.xml cnd/cnd.utils.ui/build.xml
+--- a/../../../../../../../../work/netbeans-releases/cnd.utils.ui/build.xml	2018-12-09 11:41:19.000000000 +0200
++++ b/cnd/cnd.utils.ui/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="cnd.utils.ui">
++<project basedir="." default="netbeans" name="cnd/cnd.utils.ui">
+     <description>Builds, tests, and runs the project org.netbeans.modules.cnd.utils.ui</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/jellytools.cnd/build.xml cnd/jellytools.cnd/build.xml
+--- a/../../../../../../../../work/netbeans-releases/jellytools.cnd/build.xml	2018-12-09 11:41:30.000000000 +0200
++++ b/cnd/jellytools.cnd/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="jellytools.cnd">
++<project basedir="." default="netbeans" name="cnd/jellytools.cnd">
+     <description>Builds, tests, and runs the project org.netbeans.modules.jellytools.cnd</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/libs.clank/build.xml cnd/libs.clank/build.xml
+--- a/../../../../../../../../work/netbeans-releases/libs.clank/build.xml	2018-12-09 11:41:31.000000000 +0200
++++ b/cnd/libs.clank/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -43,8 +43,8 @@
+ Version 2 license, then the option applies only if the new code is
+ made subject to such option by the copyright holder.
+ -->
+-<project name="libs.clank" default="netbeans" basedir=".">
+-    <import file="../nbbuild/templates/projectized.xml"/>
++<project name="cnd/libs.clank" default="netbeans" basedir=".">
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ 
+     <property name="clank.dest.zip" value="${basedir}/external/clank_0.3.9.zip"/>
+ 
+diff -rbu ../../../../../../../../work/netbeans-releases/libs.dbx.support/build.xml cnd/libs.dbx.support/build.xml
+--- a/../../../../../../../../work/netbeans-releases/libs.dbx.support/build.xml	2018-12-09 11:41:31.000000000 +0200
++++ b/cnd/libs.dbx.support/build.xml	2019-02-08 14:30:02.000000000 +0200
+@@ -43,7 +43,7 @@
+ Version 2 license, then the option applies only if the new code is
+ made subject to such option by the copyright holder.
+ -->
+-<project name="libs.dbx.support" default="netbeans" basedir=".">
+-    <import file="../nbbuild/templates/projectized.xml"/>
++<project name="cnd/libs.dbx.support" default="netbeans" basedir=".">
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ 
+ </project>

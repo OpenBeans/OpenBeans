@@ -1,0 +1,38 @@
+From 230ac04aabbce89844a73d494f9d88ff3e1a644d Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Tue, 6 Nov 2018 13:51:23 +0200
+Subject: [PATCH 07/32] Bundle jre
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ nb/ide.launcher/netbeans.conf | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/nb/ide.launcher/netbeans.conf b/nb/ide.launcher/netbeans.conf
+index 90b5637fe7..2bc2d6ab73 100644
+--- a/nb/ide.launcher/netbeans.conf
++++ b/nb/ide.launcher/netbeans.conf
+@@ -73,7 +73,7 @@ netbeans_default_options="-J-XX:+UseStringDeduplication -J-Xss2m -J-Djdk.gtk.ver
+ # installer points to one of those in the NetBeans application shortcut 
+ # based on the Java version selected at installation time.
+ #
+-#netbeans_jdkhome="/path/to/jdk"
++netbeans_jdkhome="../jre"
+ 
+ # Additional module clusters:
+ # using ${path.separator} (';' on Windows or ':' on Unix):
+-- 
+2.21.0
+

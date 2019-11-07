@@ -1,0 +1,58 @@
+From 7aba7410770acfc5cf381d11a138fbf39a644217 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Tue, 6 Nov 2018 13:52:05 +0200
+Subject: [PATCH 08/32] Temporarily exclude welcome module
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ nb/ide.branding.kit/nbproject/project.xml | 7 -------
+ nbbuild/cluster.properties                | 3 +--
+ 2 files changed, 1 insertion(+), 9 deletions(-)
+
+diff --git a/nb/ide.branding.kit/nbproject/project.xml b/nb/ide.branding.kit/nbproject/project.xml
+index 79840d1123..7155ba823f 100644
+--- a/nb/ide.branding.kit/nbproject/project.xml
++++ b/nb/ide.branding.kit/nbproject/project.xml
+@@ -56,13 +56,6 @@
+                         <specification-version>1.0</specification-version>
+                     </run-dependency>
+                 </dependency>
+-                <dependency>
+-                    <code-name-base>org.netbeans.modules.welcome</code-name-base>
+-                    <run-dependency>
+-                        <release-version>1</release-version>
+-                        <specification-version>1.12</specification-version>
+-                    </run-dependency>
+-                </dependency>
+             </module-dependencies>
+             <public-packages/>
+         </data>
+diff --git a/nbbuild/cluster.properties b/nbbuild/cluster.properties
+index f33725d7b2..c8a690a5c8 100644
+--- a/nbbuild/cluster.properties
++++ b/nbbuild/cluster.properties
+@@ -872,8 +872,7 @@ nb.cluster.nb=\
+         ko4j.debugging,\
+         o.n.upgrader,\
+         uihandler.exceptionreporter,\
+-        updatecenters,\
+-        welcome
++        updatecenters
+ 
+ nb.cluster.3rdparty.dir=extra
+ nb.cluster.3rdparty.depends=\
+-- 
+2.21.0
+

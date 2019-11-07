@@ -1,0 +1,12 @@
+diff --git a/ide/code.analysis/nbproject/project.xml b/ide/code.analysis/nbproject/project.xml
+index b71ef7369..3d7e054cf 100644
+--- a/ide/code.analysis/nbproject/project.xml
++++ b/ide/code.analysis/nbproject/project.xml
+@@ -280,6 +280,7 @@
+                 <friend>org.netbeans.modules.android.lint72</friend>
+                 <friend>org.netbeans.modules.cnd.analysis.api</friend>
+                 <friend>org.netbeans.modules.cnd.analysis.impl</friend>
++                <friend>org.netbeans.modules.cnd.diagnostics.clank</friend>
+                 <friend>org.netbeans.modules.cnd.highlight</friend>
+                 <friend>org.netbeans.modules.findbugs</friend>
+                 <friend>org.netbeans.modules.findbugs.installer</friend>

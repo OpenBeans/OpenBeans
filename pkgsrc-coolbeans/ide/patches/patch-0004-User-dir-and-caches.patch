@@ -1,0 +1,47 @@
+From 7aa57de734d1188913ae77184ba851d8858caac0 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Tue, 6 Nov 2018 11:15:11 +0200
+Subject: [PATCH 04/32] User dir and caches
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ nb/ide.launcher/unix/netbeans | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/nb/ide.launcher/unix/netbeans b/nb/ide.launcher/unix/netbeans
+index 73c59af07e..73b6d045a1 100644
+--- a/nb/ide.launcher/unix/netbeans
++++ b/nb/ide.launcher/unix/netbeans
+@@ -41,13 +41,13 @@ cd "$old"
+ case "`uname`" in
+     Darwin*)
+         # set default userdir and cachedir on Mac OS X
+-        DEFAULT_USERDIR_ROOT="${HOME}/Library/Application Support/NetBeans"
+-        DEFAULT_CACHEDIR_ROOT=${HOME}/Library/Caches/NetBeans
++        DEFAULT_USERDIR_ROOT="${HOME}/Library/Application Support/CoolBeans"
++        DEFAULT_CACHEDIR_ROOT=${HOME}/Library/Caches/CoolBeans
+         ;;
+     *) 
+         # set default userdir and cachedir on unix systems
+-        DEFAULT_USERDIR_ROOT=${HOME}/.netbeans
+-        DEFAULT_CACHEDIR_ROOT=${HOME}/.cache/netbeans
++        DEFAULT_USERDIR_ROOT=${HOME}/.coolbeans
++        DEFAULT_CACHEDIR_ROOT=${HOME}/.cache/coolbeans
+         ;;
+ esac
+ 
+-- 
+2.21.0
+

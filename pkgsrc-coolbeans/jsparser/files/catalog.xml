@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE module_updates PUBLIC "-//NetBeans//DTD Autoupdate Catalog 2.6//EN" "http://plugins.netbeans.org/data/catalogue/autoupdate-catalog-2_6.dtd">
+<module_updates timestamp="48/51/18/01/11/2018">
+
+
+
+<module_group name="Javascript">
+
+<module autoload="true" codenamebase="org.netbeans.libs.oracle.jsparser" distribution="jsparser.nbm" downloadsize="109604" homepage="http://www.netbeans.org/" license="21A7B1AA" moduleauthor="Oracle Corporation" needsrestart="false" releasedate="2018/10/30" targetcluster="webcommon">
+    <manifest AutoUpdate-Show-In-Client="true" OpenIDE-Module="org.netbeans.libs.oracle.jsparser/1" OpenIDE-Module-Display-Category="Javascript" OpenIDE-Module-Implementation-Version="20181030-d1e23ce8c855" OpenIDE-Module-Java-Dependencies="Java &gt; 1.8" OpenIDE-Module-Long-Description="Oracle Javascript Parser implementation." OpenIDE-Module-Name="Oracle JS Parser Implementation" OpenIDE-Module-Provides="com.oracle.js.parser.implementation" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="Oracle Javascript Parser implementation." OpenIDE-Module-Specification-Version="1.0"/>
+    
+</module>
+
+</module_group>
+
+<license name="21A7B1AA" url="http://plugins.netbeans.org/nbpluginportal/files/nbms/licenses/21A7B1AA.license"/>
+</module_updates>
+

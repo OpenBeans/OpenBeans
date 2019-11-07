@@ -1,0 +1,83 @@
+From 6a334ced4627654c362aab4dbd79eb1e89f02bf3 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Tue, 6 Nov 2018 19:12:00 +0200
+Subject: [PATCH 10/32] Hooks uihandler into coolbeans
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ .../modules/uihandler/Bundle_nb.properties       | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+
+diff --git a/nb/ide.branding/uihandler/src/org/netbeans/modules/uihandler/Bundle_nb.properties b/nb/ide.branding/uihandler/src/org/netbeans/modules/uihandler/Bundle_nb.properties
+index 59f757fcbd..2c7f30a933 100644
+--- a/nb/ide.branding/uihandler/src/org/netbeans/modules/uihandler/Bundle_nb.properties
++++ b/nb/ide.branding/uihandler/src/org/netbeans/modules/uihandler/Bundle_nb.properties
+@@ -34,17 +34,17 @@ ApplicationVersionSysPropertyResourceArg=netbeans.buildnumber
+ 
+ # URL to display to as a welcome text
+ #NOI18N
+-WELCOME_URL=https://netbeans.org/nonav/uigestures/index3.html
++WELCOME_URL=http://coolbeans.xyz/uigestures/welcome.html
+ 
+ #NOI18N
+-METRICS_URL=https://netbeans.org/nonav/uigestures/index4.html
++METRICS_URL=http://coolbeans.xyz/uigestures/metrics.html
+ 
+ # URL to display to as a welcome text in case of error
+ #NOI18N
+-ERROR_URL=https://netbeans.apache.org/nb/issues.html
++ERROR_URL=http://coolbeans.xyz/uigestures/error.html
+ 
+ #NOI18N
+-CHECKING_SERVER_URL=http://statistics.netbeans.org/analytics/authenticate?username={0}&secur_passwd={1}
++CHECKING_SERVER_URL=http://coolbeans.xyz/analytics/authenticate?username={0}&secur_passwd={1}
+ LOG_FILE=var/log/messages.log
+ # {0} - host
+ # {1} - url of upload
+@@ -55,7 +55,7 @@ MSG_ConnetionFailed=Upload of log to {0} failed!
+ # {2} - the absolute path to the IDE's log file (defined by the LOG_FILE key above)
+ # String between [URL] and [/URL] is rendered as an URL and it opens in a browser upon a click
+ # String between [TTC] and [/TTC] (Text To Copy) is possible to select and copy
+-MSG_ConnetionFailedReport=Upload of log failed, please report the original problem directly at [URL]http://www.netbeans.org/community/issues.html[/URL] and attach messages.log file.\
++MSG_ConnetionFailedReport=Upload of log failed, please report the original problem directly at [URL]http://coolbeans.xyz[/URL] and attach messages.log file.\
+ \nThe messages.log file is located at [TTC]{2}[/TTC].
+ # {0} - host
+ # {1} - url of upload
+@@ -68,19 +68,19 @@ MSG_ConnetionFailedWithResponse=Upload of log to {0} failed: {3}
+ # {3} - response message
+ # String between [URL] and [/URL] is rendered as an URL and it opens in a browser upon a click
+ # String between [TTC] and [/TTC] (Text To Copy) is possible to select and copy
+-MSG_ConnetionFailedReportWithResponse=Upload of log failed ({3}), please report the original problem directly at [URL]http://www.netbeans.org/community/issues.html[/URL] and attach messages.log file.\
++MSG_ConnetionFailedReportWithResponse=Upload of log failed ({3}), please report the original problem directly at [URL]http://coolbeans.xyz[/URL] and attach messages.log file.\
+ \nThe messages.log file is located at [TTC]{2}[/TTC].
+ 
+ Metrics_title=Usage Statistics
+ LBL_BottomText1=<html>Help us improve the CoolBeans IDE by providing anonymous usage data.</html>
+ LBL_BottomText2=<html>If you agree to participate, the IDE will send anonymous \
+-information about the high-level features that you use to a database at netbeans.org.</html>
++information about the high-level features that you use.</html>
+ LBL_BottomText3=<html>The usage statistics help us better understand user \
+ requirements and prioritize improvements in future releases. We will never \
+ reverse-engineer the collected data to find specific details about your projects.</html>
+ 
+ #NOI18N
+-METRICS_INFO_URL=http://netbeans.org/about/usage-tracking.html
++METRICS_INFO_URL=http://coolbeans.xyz/about/usage-tracking.html
+ 
+ IDE_LOG_TAB_TITLE=IDE Log
+ 
+-- 
+2.21.0
+

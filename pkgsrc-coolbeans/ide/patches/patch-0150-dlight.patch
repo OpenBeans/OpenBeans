@@ -1,0 +1,158 @@
+diff -rbu ../../../../../../../../work/netbeans-releases/dlight.kit/build.xml dlight/dlight.kit/build.xml
+--- a/../../../../../../../../work/netbeans-releases/dlight.kit/build.xml	2018-12-09 11:41:21.000000000 +0200
++++ b/dlight/dlight.kit/build.xml	2019-02-08 15:09:03.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="dlight.kit">
++<project basedir="." default="netbeans" name="dlight/dlight.kit">
+     <description>Builds, tests, and runs the project dlight.kit</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/dlight.libs.common/build.xml dlight/dlight.libs.common/build.xml
+--- a/../../../../../../../../work/netbeans-releases/dlight.libs.common/build.xml	2019-01-10 09:30:08.000000000 +0200
++++ b/dlight/dlight.libs.common/build.xml	2019-02-08 15:08:59.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project name="dlight.libs.common" default="netbeans" basedir=".">
++<project name="dlight/dlight.libs.common" default="netbeans" basedir=".">
+ 	<description>Builds, tests, and runs the project org.netbeans.modules.dlight.libs.common.</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/dlight.remote/build.xml dlight/dlight.remote/build.xml
+--- a/../../../../../../../../work/netbeans-releases/dlight.remote/build.xml	2018-12-09 11:41:21.000000000 +0200
++++ b/dlight/dlight.remote/build.xml	2019-02-08 15:09:03.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="dlight.remote">
++<project basedir="." default="netbeans" name="dlight/dlight.remote">
+     <description>Builds, tests, and runs the project org.netbeans.modules.dlight.remote</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/dlight.remote.impl/build.xml dlight/dlight.remote.impl/build.xml
+--- a/../../../../../../../../work/netbeans-releases/dlight.remote.impl/build.xml	2018-12-09 11:41:21.000000000 +0200
++++ b/dlight/dlight.remote.impl/build.xml	2019-02-08 15:09:03.000000000 +0200
+@@ -38,9 +38,9 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="dlight.remote.impl">
++<project basedir="." default="netbeans" name="dlight/dlight.remote.impl">
+     <description>Builds, tests, and runs the project org.netbeans.modules.dlight.remote.impl</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ 
+     <property name="binaries.dir" value="release/bin"/>
+     <property name="binaries.zip" value="external/fs_server-1.0.zip"/>
+diff -rbu ../../../../../../../../work/netbeans-releases/dlight.remote.ui/build.xml dlight/dlight.remote.ui/build.xml
+--- a/../../../../../../../../work/netbeans-releases/dlight.remote.ui/build.xml	2018-12-09 11:41:21.000000000 +0200
++++ b/dlight/dlight.remote.ui/build.xml	2019-02-08 15:09:03.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="dlight.remote.ui">
++<project basedir="." default="netbeans" name="dlight/dlight.remote.ui">
+     <description>Builds, tests, and runs the project org.netbeans.modules.dlight.remote.ui</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/dlight.sendto/build.xml dlight/dlight.sendto/build.xml
+--- a/../../../../../../../../work/netbeans-releases/dlight.sendto/build.xml	2018-12-09 11:41:21.000000000 +0200
++++ b/dlight/dlight.sendto/build.xml	2019-02-08 15:09:03.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="dlight.sendto">
++<project basedir="." default="netbeans" name="dlight/dlight.sendto">
+     <description>Builds, tests, and runs the project org.netbeans.modules.dlight.sendto</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/git.remote/build.xml dlight/git.remote/build.xml
+--- a/../../../../../../../../work/netbeans-releases/git.remote/build.xml	2018-12-09 11:41:23.000000000 +0200
++++ b/dlight/git.remote/build.xml	2019-02-08 15:09:03.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="git.remote">
++<project basedir="." default="netbeans" name="dlight/git.remote">
+     <description>Builds, tests, and runs the project org.netbeans.modules.git.remote</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/git.remote.cli/build.xml dlight/git.remote.cli/build.xml
+--- a/../../../../../../../../work/netbeans-releases/git.remote.cli/build.xml	2018-12-09 11:41:23.000000000 +0200
++++ b/dlight/git.remote.cli/build.xml	2019-02-08 15:09:03.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="git.remote.cli">
++<project basedir="." default="netbeans" name="dlight/git.remote.cli">
+     <description>Builds, tests, and runs the project org.netbeans.modules.git.remote.cli</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/mercurial.remote/build.xml dlight/mercurial.remote/build.xml
+--- a/../../../../../../../../work/netbeans-releases/mercurial.remote/build.xml	2018-12-09 11:41:32.000000000 +0200
++++ b/dlight/mercurial.remote/build.xml	2019-02-08 15:09:03.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="mercurial.remote">
++<project basedir="." default="netbeans" name="dlight/mercurial.remote">
+     <description>Builds, tests, and runs the project org.netbeans.modules.mercurial.remote</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/remotefs.versioning/build.xml dlight/remotefs.versioning/build.xml
+--- a/../../../../../../../../work/netbeans-releases/remotefs.versioning/build.xml	2018-12-09 11:41:38.000000000 +0200
++++ b/dlight/remotefs.versioning/build.xml	2019-02-08 15:09:03.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="remotefs.versioning">
++<project basedir="." default="netbeans" name="dlight/remotefs.versioning">
+     <description>Builds, tests, and runs the project org.netbeans.modules.remotefs.versioning</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/remotefs.versioning.api/build.xml dlight/remotefs.versioning.api/build.xml
+--- a/../../../../../../../../work/netbeans-releases/remotefs.versioning.api/build.xml	2018-12-09 11:41:38.000000000 +0200
++++ b/dlight/remotefs.versioning.api/build.xml	2019-02-08 15:09:03.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="remotefs.versioning.api">
++<project basedir="." default="netbeans" name="dlight/remotefs.versioning.api">
+     <description>Builds, tests, and runs the project org.netbeans.modules.remotefs.versioning.api</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff -rbu ../../../../../../../../work/netbeans-releases/subversion.remote/build.xml dlight/subversion.remote/build.xml
+--- a/../../../../../../../../work/netbeans-releases/subversion.remote/build.xml	2018-12-09 11:41:39.000000000 +0200
++++ b/dlight/subversion.remote/build.xml	2019-02-08 15:09:03.000000000 +0200
+@@ -38,7 +38,7 @@
+ 
+ Contributor(s):
+ -->
+-<project basedir="." default="netbeans" name="subversion.remote">
++<project basedir="." default="netbeans" name="dlight/subversion.remote">
+     <description>Builds, tests, and runs the project org.netbeans.modules.subversion.remote</description>
+-    <import file="../nbbuild/templates/projectized.xml"/>
++    <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>

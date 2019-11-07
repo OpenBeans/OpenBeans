@@ -1,0 +1,38 @@
+From 66b6275f5678ef1395aa22cc5e5dd62ac24d77ce Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Tue, 6 Nov 2018 13:54:30 +0200
+Subject: [PATCH 09/32] All right reserved in about box
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ platform/o.n.core/src/org/netbeans/core/ui/Bundle.properties | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/platform/o.n.core/src/org/netbeans/core/ui/Bundle.properties b/platform/o.n.core/src/org/netbeans/core/ui/Bundle.properties
+index 46ed8b830f..e7e4efcffa 100644
+--- a/platform/o.n.core/src/org/netbeans/core/ui/Bundle.properties
++++ b/platform/o.n.core/src/org/netbeans/core/ui/Bundle.properties
+@@ -23,6 +23,8 @@ LBL_Copyright=<div style="font-size: {0}pt; font-family: Verdana, 'Verdana CE',
+     Made for you by Emilian Bold\
+     <br/> \
+     Got in touch at emilian.bold@josekibold.ro\
++    <br/> \
++    Copyright (c) 2018-2019. All rights reserved.\
+     <br/>\
+     </div>
+ LBL_AddOnCopyright=<div style="font-size: {1}pt; font-family: Verdana, 'Verdana CE',  Arial, 'Arial CE', 'Lucida Grande CE', lucida, 'Helvetica CE', sans-serif;">\
+-- 
+2.21.0
+

@@ -1,0 +1,10 @@
+--- a/nbbuild/cluster.properties2	2019-02-21 11:16:12.000000000 +0200
++++ b/nbbuild/cluster.properties	2019-02-21 11:16:31.000000000 +0200
+@@ -278,6 +278,7 @@
+         print,\
+         progress.ui,\
+         queries,\
++        ro.emilianbold.notifications,\
+         sampler,\
+         sendopts,\
+         settings,\
