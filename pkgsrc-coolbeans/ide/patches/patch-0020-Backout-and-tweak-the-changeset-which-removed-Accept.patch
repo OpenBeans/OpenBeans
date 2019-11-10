@@ -1,9 +1,9 @@
-From bda1e9e97fbd97ec6de8c2ded893f29c42eb912a Mon Sep 17 00:00:00 2001
+From a234661b7e97018b0b574279d871ff9c41a4c7c0 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Sat, 10 Nov 2018 07:13:38 +0200
-Subject: [PATCH 20/32] Backout and tweak the changeset which removed
+Subject: [PATCH 20/33] Backout and tweak the changeset which removed
  AcceptLicense (621a640a89e4625b448bc8b3b73ab6b74968d9a5)
- 
+
 ---
  nb/ide.launcher/netbeans.conf                 |   2 +-
  nb/ide.launcher/unix/netbeans                 |   2 +

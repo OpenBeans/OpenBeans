@@ -1,7 +1,7 @@
-From 642bc761783e8713ea2bc22f60fcaa7636e4588b Mon Sep 17 00:00:00 2001
+From 9785100a437c3165f748fe02dfe23ac4e68cd147 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Fri, 9 Nov 2018 13:35:26 +0200
-Subject: [PATCH 18/32] Enables netbeans.diff.default.compact by default
+Subject: [PATCH 18/33] Enables netbeans.diff.default.compact by default
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any

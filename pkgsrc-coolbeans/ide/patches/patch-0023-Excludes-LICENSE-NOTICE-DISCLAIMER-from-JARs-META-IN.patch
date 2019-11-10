@@ -1,7 +1,7 @@
-From d766035ecb7317862f2fd51c1491f1d889f5630c Mon Sep 17 00:00:00 2001
+From d7b2c9b6d95ae4b5332670f9ed4d80dcd7666449 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Sat, 8 Dec 2018 13:44:09 +0200
-Subject: [PATCH 23/32] Excludes LICENSE/NOTICE/DISCLAIMER from JARs META-INF
+Subject: [PATCH 23/33] Excludes LICENSE/NOTICE/DISCLAIMER from JARs META-INF
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any

@@ -1,7 +1,7 @@
-From cb84c263109a21cb3c0bb9ea8ae6ec693a70b1eb Mon Sep 17 00:00:00 2001
+From 5882e918abf35bf235b68373b64652a06b9b9b71 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Mon, 5 Nov 2018 19:12:22 +0200
-Subject: [PATCH 03/32] Changes Update Center URLs
+Subject: [PATCH 03/33] Changes Update Center URLs
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any

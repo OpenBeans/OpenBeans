@@ -1,7 +1,7 @@
-From 006083712d0cc06ce7d1f02daa42eccab2583c0a Mon Sep 17 00:00:00 2001
+From 5a72916ef339d3b935048d5ee3d277fdc97d3499 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Sat, 10 Nov 2018 07:14:47 +0200
-Subject: [PATCH 21/32] Use CoolBeans name in AcceptLicense
+Subject: [PATCH 21/33] Use CoolBeans name in AcceptLicense
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any

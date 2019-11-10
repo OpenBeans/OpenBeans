@@ -1,7 +1,7 @@
-From e91c8a98ae127f4ed2c50df3913c9af8950359ce Mon Sep 17 00:00:00 2001
+From f4c9d23f1bd3d4725bb28a325bb617d3823f5fdc Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Fri, 9 Nov 2018 13:44:46 +0200
-Subject: [PATCH 19/32] Excludes release-toplevel folder (which has README.html
+Subject: [PATCH 19/33] Excludes release-toplevel folder (which has README.html
  and CREDITS) from the zip
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  

@@ -1,7 +1,7 @@
-From c49d6e8e441e04372b75616b63654c31bcba6156 Mon Sep 17 00:00:00 2001
+From 36923df9634db324abf16a1be4e12503d225048d Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Mon, 5 Nov 2018 12:59:06 +0200
-Subject: [PATCH 02/32] Enables enterprise cluster
+Subject: [PATCH 02/33] Enables enterprise cluster
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any

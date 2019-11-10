@@ -1,7 +1,7 @@
-From c7aaf227cd4439a613db2dedab57d7c8825d4124 Mon Sep 17 00:00:00 2001
+From 39765ae281ec40b6473933b48e9178f831fcfceb Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Tue, 6 Nov 2018 12:44:46 +0200
-Subject: [PATCH 06/32] Updates metrics info URL
+Subject: [PATCH 06/33] Updates metrics info URL
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any
@@ -21,7 +21,7 @@ License: Copyright (c) 2018, 2019 Emilian Marius Bold
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/platform/core.ui/src/org/netbeans/core/ui/options/general/Bundle.properties b/platform/core.ui/src/org/netbeans/core/ui/options/general/Bundle.properties
-index cfec33b8ea..52e3d5aa4c 100644
+index 52a5d41d91..c4531ed9dd 100644
 --- a/platform/core.ui/src/org/netbeans/core/ui/options/general/Bundle.properties
 +++ b/platform/core.ui/src/org/netbeans/core/ui/options/general/Bundle.properties
 @@ -50,7 +50,7 @@ AN_Learn_More=Learn more

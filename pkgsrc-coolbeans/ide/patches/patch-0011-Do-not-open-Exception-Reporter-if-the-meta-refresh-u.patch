@@ -1,7 +1,7 @@
-From a46d45305c1dbf57e8da9ba2108ca3e38bccda2d Mon Sep 17 00:00:00 2001
+From 35b01723e9ed3bf036e70ab0c8e12d85284c449d Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Tue, 6 Nov 2018 21:38:29 +0200
-Subject: [PATCH 11/32] Do not open Exception Reporter if the meta refresh url
+Subject: [PATCH 11/33] Do not open Exception Reporter if the meta refresh url
  is empty
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  

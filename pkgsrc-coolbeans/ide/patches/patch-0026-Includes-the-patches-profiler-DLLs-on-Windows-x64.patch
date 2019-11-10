@@ -1,7 +1,7 @@
-From eca90009354d4c3dda43b2704a218f207ab86f46 Mon Sep 17 00:00:00 2001
+From 6bec55c6c923c3b113dc1eb408c7a5e91db48eeb Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Fri, 7 Jun 2019 22:56:15 +0300
-Subject: [PATCH 26/32] Includes the patches profiler DLLs on Windows x64
+Subject: [PATCH 26/33] Includes the patches profiler DLLs on Windows x64
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any

@@ -1,7 +1,7 @@
-From 230ac04aabbce89844a73d494f9d88ff3e1a644d Mon Sep 17 00:00:00 2001
+From daf00683e73fae122dc74b537a49d1ed19b7cef9 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Tue, 6 Nov 2018 13:51:23 +0200
-Subject: [PATCH 07/32] Bundle jre
+Subject: [PATCH 07/33] Bundle jre
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any

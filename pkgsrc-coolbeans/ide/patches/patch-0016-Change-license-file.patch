@@ -1,7 +1,7 @@
-From d402a2efe33fb0df96139b1c682365df407f88cd Mon Sep 17 00:00:00 2001
+From 920a80f97513503a4634f6dfeb121c9e37b93851 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Fri, 9 Nov 2018 09:17:08 +0200
-Subject: [PATCH 16/32] Change license file
+Subject: [PATCH 16/33] Change license file
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any
