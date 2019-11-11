@@ -4057,9 +4057,6 @@ nbms/ergonomics/org-netbeans-modules-ide-ergonomics.nbm
 nbms/ergonomics/org-netbeans-modules-performance-ergonomics.nbm
 nbms/extide/org-apache-tools-ant-module.nbm
 nbms/extide/org-netbeans-modules-options-java.nbm
-nbms/extra/org-netbeans-libs-javafx-linux.nbm
-nbms/extra/org-netbeans-libs-javafx-macosx.nbm
-nbms/extra/org-netbeans-libs-javafx-win.nbm
 nbms/groovy/org-netbeans-modules-gradle-htmlui.nbm
 nbms/groovy/org-netbeans-modules-gradle-java.nbm
 nbms/groovy/org-netbeans-modules-gradle-javaee.nbm
@@ -4739,6 +4736,9 @@ nbms/platform/org-netbeans-html-xhr4j.nbm
 nbms/platform/org-netbeans-lib-uihandler.nbm
 nbms/platform/org-netbeans-libs-asm.nbm
 nbms/platform/org-netbeans-libs-felix.nbm
+nbms/platform/org-netbeans-libs-javafx-linux.nbm
+nbms/platform/org-netbeans-libs-javafx-macosx.nbm
+nbms/platform/org-netbeans-libs-javafx-win.nbm
 nbms/platform/org-netbeans-libs-javafx.nbm
 nbms/platform/org-netbeans-libs-jna-platform.nbm
 nbms/platform/org-netbeans-libs-jna.nbm
