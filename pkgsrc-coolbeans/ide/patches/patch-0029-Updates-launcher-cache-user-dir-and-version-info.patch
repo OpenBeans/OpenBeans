@@ -33,8 +33,8 @@ index dda65af512..cddcc2b0f3 100644
  const char *NbLauncher::DEFAULT_CACHEDIR_ROOT_TOKEN = "${DEFAULT_CACHEDIR_ROOT}";
 -const char *NbLauncher::NETBEANS_DIRECTORY = "\\NetBeans\\";
 -const char *NbLauncher::NETBEANS_CACHES_DIRECTORY = "\\NetBeans\\Cache\\";
-+const char *NbLauncher::NETBEANS_DIRECTORY = "\\CoolBeans\\";
-+const char *NbLauncher::NETBEANS_CACHES_DIRECTORY = "\\CoolBeans\\Cache\\";
++const char *NbLauncher::NETBEANS_DIRECTORY = "\\OpenBeans\\";
++const char *NbLauncher::NETBEANS_CACHES_DIRECTORY = "\\OpenBeans\\Cache\\";
  
  const char *NbLauncher::CON_ATTACH_MSG = 
  "\n\nThe launcher has determined that the parent process has a console and will reuse it for its own console output.\n"
@@ -47,7 +47,7 @@ index 71b1164517..5e99b42799 100644
     type="win32"/>
  
 -<description>NetBeans IDE process</description>
-+<description>CoolBeans process</description>
++<description>OpenBeans process</description>
  <dependency>
    <dependentAssembly>
      <assemblyIdentity
@@ -60,7 +60,7 @@ index 3f7dc6eb9f..90bd85faab 100644
     type="win32"/>
  
 -<description>NetBeans IDE process</description>
-+<description>CoolBeans process</description>
++<description>OpenBeans process</description>
  <dependency>
    <dependentAssembly>
      <assemblyIdentity
@@ -76,7 +76,7 @@ index 3d8adef269..d563f46105 100644
 -#define COMPONENT "NetBeans IDE"
 -#define VER "9.0.0.0"
 +#define COMPANY "JOSEKI BOLD SRL"
-+#define COMPONENT "CoolBeans"
++#define COMPONENT "OpenBeans"
 +#define VER "2019.06"
  #define FVER 9,0,0,0
  #define BUILD_ID "03062018"
@@ -84,7 +84,7 @@ index 3d8adef269..d563f46105 100644
 -#define COPYRIGHT "Based on Apache NetBeans from the Apache Software Foundation and is licensed under Apache License Version 2.0"
 -#define NAME "NetBeans IDE 9.0"
 +#define COPYRIGHT "Copyright (c) 2018-2019 JOSEKI BOLD SRL"
-+#define NAME "CoolBeans 2019.06"
++#define NAME "OpenBeans 2019.06"
  
 -- 
 2.21.0

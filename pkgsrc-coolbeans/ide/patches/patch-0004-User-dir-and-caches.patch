@@ -30,15 +30,15 @@ index 73c59af07e..73b6d045a1 100644
          # set default userdir and cachedir on Mac OS X
 -        DEFAULT_USERDIR_ROOT="${HOME}/Library/Application Support/NetBeans"
 -        DEFAULT_CACHEDIR_ROOT=${HOME}/Library/Caches/NetBeans
-+        DEFAULT_USERDIR_ROOT="${HOME}/Library/Application Support/CoolBeans"
-+        DEFAULT_CACHEDIR_ROOT=${HOME}/Library/Caches/CoolBeans
++        DEFAULT_USERDIR_ROOT="${HOME}/Library/Application Support/OpenBeans"
++        DEFAULT_CACHEDIR_ROOT=${HOME}/Library/Caches/OpenBeans
          ;;
      *) 
          # set default userdir and cachedir on unix systems
 -        DEFAULT_USERDIR_ROOT=${HOME}/.netbeans
 -        DEFAULT_CACHEDIR_ROOT=${HOME}/.cache/netbeans
-+        DEFAULT_USERDIR_ROOT=${HOME}/.coolbeans
-+        DEFAULT_CACHEDIR_ROOT=${HOME}/.cache/coolbeans
++        DEFAULT_USERDIR_ROOT=${HOME}/.openbeans
++        DEFAULT_CACHEDIR_ROOT=${HOME}/.cache/openbeans
          ;;
  esac
  

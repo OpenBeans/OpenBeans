@@ -1,7 +1,7 @@
 From 8552d9b386adc149f7913dd39acc440d3c72346f Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Mon, 11 Nov 2019 00:16:00 +0200
-Subject: [PATCH 01/33] Adds CoolBeans branding
+Subject: [PATCH 01/33] Adds OpenBeans branding
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any
@@ -74,13 +74,13 @@ index 74d3288116..67c8fcc6ca 100644
  
 -LBL_splash_window_title=Starting Apache NetBeans IDE
 -currentVersion=Apache NetBeans IDE 11.1
-+LBL_splash_window_title=Starting CoolBeans IDE
-+currentVersion=CoolBeans IDE Dev (Build {0})
++LBL_splash_window_title=Starting OpenBeans IDE
++currentVersion=OpenBeans IDE Dev (Build {0})
  
 -MSG_warning=NetBeans IDE - Warning
 -MSG_info=NetBeans IDE - Information
-+MSG_warning=CoolBeans IDE - Warning
-+MSG_info=CoolBeans IDE - Information
++MSG_warning=OpenBeans IDE - Warning
++MSG_info=OpenBeans IDE - Information
 diff --git a/nb/ide.branding/core.windows/src/org/netbeans/core/windows/view/ui/Bundle_nb.properties b/nb/ide.branding/core.windows/src/org/netbeans/core/windows/view/ui/Bundle_nb.properties
 index 434d61091e..5c71d68f44 100644
 --- a/nb/ide.branding/core.windows/src/org/netbeans/core/windows/view/ui/Bundle_nb.properties
@@ -91,8 +91,8 @@ index 434d61091e..5c71d68f44 100644
  # {1} project name
 -CTL_MainWindow_Title={1} - Apache NetBeans IDE 11.1
 -CTL_MainWindow_Title_No_Project=Apache NetBeans 11.1
-+CTL_MainWindow_Title={1} - CoolBeans IDE 2019.06
-+CTL_MainWindow_Title_No_Project=CoolBeans IDE 2019.06
++CTL_MainWindow_Title={1} - OpenBeans IDE 2019.06
++CTL_MainWindow_Title_No_Project=OpenBeans IDE 2019.06
 diff --git a/nb/ide.launcher/unix/netbeans b/nb/ide.launcher/unix/netbeans
 index 42c9808e5e..73c59af07e 100644
 --- a/nb/ide.launcher/unix/netbeans
@@ -102,7 +102,7 @@ index 42c9808e5e..73c59af07e 100644
          eval launchNbexec \
              --jdkhome '"$netbeans_jdkhome"' \
 -            -J-Xdock:name=NetBeans \
-+            -J-Xdock:name=CoolBeans \
++            -J-Xdock:name=OpenBeans \
              '"-J-Xdock:icon=$basedir/nb/netbeans.icns"' \
              --branding nb \
              --clusters '"$netbeans_clusters"' \
@@ -116,15 +116,15 @@ index 024eecc7a2..ba0a024f8e 100644
  OpenIDE-Module-Display-Category=Infrastructure
 -OpenIDE-Module-Long-Description=It's module which contains the declaration of NetBeans update centers for Autoupdate module.
 -OpenIDE-Module-Short-Description=Declares NetBeans autoupdate centers.
-+OpenIDE-Module-Long-Description=It's module which contains the declaration of CoolBeans update centers for Autoupdate module.
-+OpenIDE-Module-Short-Description=Declares CoolBeans autoupdate centers.
++OpenIDE-Module-Long-Description=It's module which contains the declaration of OpenBeans update centers for Autoupdate module.
++OpenIDE-Module-Short-Description=Declares OpenBeans autoupdate centers.
  
 -Services/AutoupdateType/distribution-update-provider.instance=NetBeans Distribution
 -Services/AutoupdateType/pluginportal-update-provider.instance=NetBeans Plugin Portal
 -Services/AutoupdateType/82pluginportal-update-provider.instance=NetBeans 8.2 Plugin Portal
-+Services/AutoupdateType/distribution-update-provider.instance=CoolBeans Distribution
++Services/AutoupdateType/distribution-update-provider.instance=OpenBeans Distribution
 +Services/AutoupdateType/pluginportal-update-provider.instance=Plugin Portal
-+Services/AutoupdateType/82pluginportal-update-provider.instance=CoolBeans 8.2 Plugin Portal
++Services/AutoupdateType/82pluginportal-update-provider.instance=OpenBeans 8.2 Plugin Portal
  
  #NOI18N
  URL_Distribution=https://netbeans.apache.org/nb/updates/11.1/updates.xml.gz?{$netbeans.hash.code}
@@ -137,19 +137,19 @@ index 57433114f7..eafe90bf1a 100644
  # VERSIONING (TopLogging, MainWindow)
  # {0} - build number
 -currentVersion=Apache NetBeans Platform 11.1
-+currentVersion=CoolBeans Platform Dev (Build {0})
++currentVersion=OpenBeans Platform Dev (Build {0})
  
 -ERR_no_user_directory=netbeans.user is not set.\nPlease check your NetBeans startup script.
-+ERR_no_user_directory=netbeans.user is not set.\nPlease check your CoolBeans startup script.
++ERR_no_user_directory=netbeans.user is not set.\nPlease check your OpenBeans startup script.
  # {0} - userdir full path
  # {1} - inst full path
 -ERR_user_dir_is_inside_home=Your user directory ({0}) cannot reside inside your NetBeans installation directory ({1}).
-+ERR_user_dir_is_inside_home=Your user directory ({0}) cannot reside inside your CoolBeans installation directory ({1}).
++ERR_user_dir_is_inside_home=Your user directory ({0}) cannot reside inside your OpenBeans installation directory ({1}).
  
  #Splash
  # title of the splash window; shown perhaps in window tray of e.g. Gnome
 -LBL_splash_window_title=Starting Apache NetBeans Platform
-+LBL_splash_window_title=Starting CoolBeans Platform
++LBL_splash_window_title=Starting OpenBeans Platform
  # The Title of the About Box
  CTL_About_Title=About
  CTL_About_Detail=Detail
@@ -163,8 +163,8 @@ index 6406e17025..3f47ba4e95 100644
  # {1} project name
 -CTL_MainWindow_Title=Apache NetBeans Platform 11.1
 -CTL_MainWindow_Title_No_Project=Apache NetBeans Platform 11.1
-+CTL_MainWindow_Title=CoolBeans Platform {0}
-+CTL_MainWindow_Title_No_Project=CoolBeans Platform {0}
++CTL_MainWindow_Title=OpenBeans Platform {0}
++CTL_MainWindow_Title_No_Project=OpenBeans Platform {0}
  
  # DocumentsDlg
  LBL_Documents=&Documents:
@@ -181,7 +181,7 @@ index b233bd7381..46ed8b830f 100644
 -    Apache License Version 2.0</a>. Apache NetBeans is currently undergoing \
 -    Incubation at the Apache Software Foundation. For more information, please visit \
 -    <a href="https://netbeans.apache.org/">netbeans.apache.org</a>.</div>
-+    CoolBeans is an IDE distribution\
++    OpenBeans is an IDE distribution\
 +    <br/> \
 +    <br/> \
 +    Made for you by Emilian Bold\

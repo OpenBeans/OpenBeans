@@ -49,12 +49,12 @@ index 67c8fcc6ca..d6862c5bcf 100644
 @@ -62,7 +62,7 @@ AboutTextColor=0x000000
  ###################
  
- LBL_splash_window_title=Starting CoolBeans IDE
--currentVersion=CoolBeans IDE Dev (Build {0})
-+currentVersion=CoolBeans IDE 2019.06 (Build {0})
+ LBL_splash_window_title=Starting OpenBeans IDE
+-currentVersion=OpenBeans IDE Dev (Build {0})
++currentVersion=OpenBeans IDE 2019.06 (Build {0})
  
- MSG_warning=CoolBeans IDE - Warning
- MSG_info=CoolBeans IDE - Information
+ MSG_warning=OpenBeans IDE - Warning
+ MSG_info=OpenBeans IDE - Information
 diff --git a/platform/core.startup/src/org/netbeans/core/startup/Splash.java b/platform/core.startup/src/org/netbeans/core/startup/Splash.java
 index 9c9e00a775..46c0018c33 100644
 --- a/platform/core.startup/src/org/netbeans/core/startup/Splash.java

@@ -26,12 +26,12 @@ index ba0a024f8e..be7af9095f 100644
 --- a/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/Bundle.properties
 +++ b/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/Bundle.properties
 @@ -24,13 +24,13 @@ OpenIDE-Module-Long-Description=It's module which contains the declaration of Co
- OpenIDE-Module-Short-Description=Declares CoolBeans autoupdate centers.
+ OpenIDE-Module-Short-Description=Declares OpenBeans autoupdate centers.
  
- Services/AutoupdateType/distribution-update-provider.instance=CoolBeans Distribution
+ Services/AutoupdateType/distribution-update-provider.instance=OpenBeans Distribution
 -Services/AutoupdateType/pluginportal-update-provider.instance=Plugin Portal
-+Services/AutoupdateType/pluginportal-update-provider.instance=CoolBeans Plugin Portal
- Services/AutoupdateType/82pluginportal-update-provider.instance=CoolBeans 8.2 Plugin Portal
++Services/AutoupdateType/pluginportal-update-provider.instance=OpenBeans Plugin Portal
+ Services/AutoupdateType/82pluginportal-update-provider.instance=OpenBeans 8.2 Plugin Portal
  
  #NOI18N
 -URL_Distribution=https://netbeans.apache.org/nb/updates/11.1/updates.xml.gz?{$netbeans.hash.code}

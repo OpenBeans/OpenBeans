@@ -52,7 +52,7 @@ index e848b2e4e0..47a2f9ce0f 100644
 +                    NotificationDisplayer.getDefault().notify(
 +                            "macOS sandbox detected",
 +                            ImageUtilities.loadImageIcon("org/netbeans/core/startup/frame48.gif", true),
-+                            "Please copy CoolBeans into /Applications or some other folder. The IDE might not work properly while sandboxed by macOS.",
++                            "Please copy OpenBeans into /Applications or some other folder. The IDE might not work properly while sandboxed by macOS.",
 +                            null);
 +                }
 +            }

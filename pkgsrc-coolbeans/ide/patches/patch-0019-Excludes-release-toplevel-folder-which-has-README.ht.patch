@@ -29,7 +29,7 @@ index 223ce17800..b5a6775fd2 100644
  
    <target name="netbeans-extra">
  
-+<!-- CoolBeans doesn't need these
++<!-- OpenBeans doesn't need these
      <copy todir="${netbeans.dest.dir}">
        <fileset dir="release-toplevel"/>
      </copy>
