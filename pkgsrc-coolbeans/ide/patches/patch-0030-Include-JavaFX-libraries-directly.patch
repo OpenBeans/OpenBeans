@@ -1,4 +1,4 @@
-From 40fd6a39b68fb120fcc5b9c843f20624095c6349 Mon Sep 17 00:00:00 2001
+From 81cb68a11d61abf4e5d31edf36e6b67c405fd839 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Fri, 19 Jul 2019 13:05:25 +0300
 Subject: [PATCH 30/33] Include JavaFX libraries directly
@@ -48,8 +48,8 @@ License: Copyright (c) 2018, 2019 Emilian Marius Bold
  nb/updatecenters/nbproject/project.properties      |  4 ++--
  .../modules/updatecenters/resources/mf-layer.xml   |  2 ++
  nbbuild/build.xml                                  | 14 +++++++++++++-
- nbbuild/cluster.properties                         |  5 +++--
- 32 files changed, 24 insertions(+), 74 deletions(-)
+ nbbuild/cluster.properties                         | 13 +++++++------
+ 32 files changed, 28 insertions(+), 78 deletions(-)
  delete mode 100644 extra/libs.javafx.linux/external/javafx-base-11-linux.jar.external
  delete mode 100644 extra/libs.javafx.linux/external/javafx-controls-11-linux.jar.external
  delete mode 100644 extra/libs.javafx.linux/external/javafx-graphics-11-linux.jar.external
@@ -430,7 +430,7 @@ index 83f7e952d1..f8254efa3e 100644
 +
  </project>
 diff --git a/nbbuild/cluster.properties b/nbbuild/cluster.properties
-index c8a690a5c8..90369cb494 100644
+index c8a690a5c8..3bcadf69bc 100644
 --- a/nbbuild/cluster.properties
 +++ b/nbbuild/cluster.properties
 @@ -95,7 +95,6 @@ clusters.config.java.list=\
@@ -459,6 +459,21 @@ index c8a690a5c8..90369cb494 100644
          nb.cluster.harness
  nb.cluster.nb=\
          autoupdate.pluginimporter,\
+@@ -877,10 +878,10 @@ nb.cluster.nb=\
+ nb.cluster.3rdparty.dir=extra
+ nb.cluster.3rdparty.depends=\
+         nb.cluster.platform
+-nb.cluster.3rdparty=\
+-        libs.javafx.linux,\
+-        libs.javafx.macosx,\
+-        libs.javafx.win
++nb.cluster.3rdparty=
++#       libs.javafx.linux,\
++#       libs.javafx.macosx,\
++#       libs.javafx.win
+ 
+ 
+ nb.cluster.harness.dir=harness
 -- 
 2.21.0
 
