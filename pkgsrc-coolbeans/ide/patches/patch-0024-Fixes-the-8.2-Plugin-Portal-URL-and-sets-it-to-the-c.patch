@@ -25,9 +25,9 @@ diff --git a/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/B
 index be7af9095f..7246bdbf4b 100644
 --- a/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/Bundle.properties
 +++ b/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/Bundle.properties
-@@ -32,7 +32,7 @@ URL_Distribution=https://coolbeans.xyz/nb/updates/2019.06/updates.xml.gz?{$netbe
+@@ -32,7 +32,7 @@ URL_Distribution=https://www.openbeans.org/nb/updates/2019.06/updates.xml.gz?{$netbe
  #NOI18N
- URL_PluginPortal=https://coolbeans.xyz/nbpluginportal/updates/2019.06/catalog.xml.gz
+ URL_PluginPortal=https://www.openbeans.org/nbpluginportal/updates/2019.06/catalog.xml.gz
  #NOI18N
 -URL_82PluginPortal=http://updates.netbeans.org/netbeans/updates/8.2/uc/final/distribution/catalog.xml.gz
 +URL_82PluginPortal=http://updates.netbeans.org/netbeans/updates/8.2/uc/final/certified/catalog.xml.gz

@@ -15,16 +15,16 @@
 #  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 #
 
-tar xvfz CoolBeans.app.tgz
+tar xvfz OpenBeans.app.tgz
 
 #make sure it's executable
-chmod +x CoolBeans.app/Contents/Resources/coolbeans/platform/terminal-notifier-1.7.1/terminal-notifier.app/Contents/MacOS/terminal-notifier
+chmod +x OpenBeans.app/Contents/Resources/openbeans/platform/terminal-notifier-1.7.1/terminal-notifier.app/Contents/MacOS/terminal-notifier
 
-codesign -s 7B8M7A5USJ "CoolBeans.app"
+codesign -s 7B8M7A5USJ "OpenBeans.app"
 
-DMG="CoolBeans-2019.06.dmg"
+DMG="OpenBeans-2019.06.dmg"
 
-hdiutil create -volname "CoolBeans 2019.06" -srcfolder "CoolBeans.app" -ov -format UDZO "$DMG"
+hdiutil create -volname "OpenBeans 2019.06" -srcfolder "OpenBeans.app" -ov -format UDZO "$DMG"
 
 xattr -rc "$DMG"
 

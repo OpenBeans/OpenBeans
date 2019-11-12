@@ -42,6 +42,6 @@ PRG="`resolve_symlink "$0"`"
 parentDir="`dirname "$PRG"`"
 parentDir="`absolutize_path "$parentDir"`"
 #resolve the script path
-scriptPath="$parentDir/../Resources/coolbeans/bin"
+scriptPath="$parentDir/../Resources/openbeans/bin"
 #run the main executable
 sh -- "$scriptPath/netbeans" "$@"

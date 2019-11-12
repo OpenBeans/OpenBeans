@@ -28,7 +28,7 @@ SITES.OpenJDK11U-jdk_x64_mac_hotspot_11.0.3_7.tar.gz = -https://github.com/Adopt
 WRKSRC=		${WRKDIR}
 #/jsparser
 
-DEPENDS += coolbeans:../../coolbeans/ide
+DEPENDS += openbeans:../../coolbeans/ide
 
 APP_VERSION=2019.06
 
@@ -36,22 +36,22 @@ pre-configure:
 	${CP} -R ${FILESDIR}/* ${WRKSRC}
 
 do-build:
-	${MKDIR} ${WRKSRC}/CoolBeans.app/Contents/MacOS
-	${MKDIR} ${WRKSRC}/CoolBeans.app/Contents/Resources
-	${SED} "s/NETBEANS_VERSION/${APP_VERSION}/g" ${WRKSRC}/Info.plist > ${WRKSRC}/CoolBeans.app/Contents/Info.plist
-	${CP} -R ${PREFIX}/coolbeans-2018.12 ${WRKSRC}/CoolBeans.app/Contents/Resources/coolbeans
-	${CP} ${WRKSRC}/original-netbeans ${WRKSRC}/CoolBeans.app/Contents/MacOS/netbeans
-	${CHMOD} +x ${WRKSRC}/CoolBeans.app/Contents/MacOS/netbeans
-	${CP} ${WRKSRC}/CoolBeans.app/Contents/Resources/coolbeans/nb/netbeans.icns ${WRKSRC}/CoolBeans.app/Contents/Resources/
+	${MKDIR} ${WRKSRC}/OpenBeans.app/Contents/MacOS
+	${MKDIR} ${WRKSRC}/OpenBeans.app/Contents/Resources
+	${SED} "s/NETBEANS_VERSION/${APP_VERSION}/g" ${WRKSRC}/Info.plist > ${WRKSRC}/OpenBeans.app/Contents/Info.plist
+	${CP} -R ${PREFIX}/openbeans-2019.06 ${WRKSRC}/OpenBeans.app/Contents/Resources/openbeans
+	${CP} ${WRKSRC}/original-netbeans ${WRKSRC}/OpenBeans.app/Contents/MacOS/netbeans
+	${CHMOD} +x ${WRKSRC}/OpenBeans.app/Contents/MacOS/netbeans
+	${CP} ${WRKSRC}/OpenBeans.app/Contents/Resources/openbeans/nb/netbeans.icns ${WRKSRC}/OpenBeans.app/Contents/Resources/
 	#copy JRE
 	#TODO: delete jre/lib/src.zip to save space?
-	${CP} -R ${WRKSRC}/jdk-11.0.3+7/Contents/Home/ ${WRKSRC}/CoolBeans.app/Contents/Resources/coolbeans/jre
+	${CP} -R ${WRKSRC}/jdk-11.0.3+7/Contents/Home/ ${WRKSRC}/OpenBeans.app/Contents/Resources/openbeans/jre
 
 do-install:
 	${MKDIR} ${DESTDIR}${PREFIX}/macos
 	${MKDIR} ${DESTDIR}${PREFIX}/zip
-	${TAR} cvfz ${DESTDIR}${PREFIX}/macos/CoolBeans.app.tgz -C ${WRKSRC} CoolBeans.app
-	${TAR} cvfz ${DESTDIR}${PREFIX}/zip/CoolBeans.tgz -C ${PREFIX}/ coolbeans-2018.12
+	${TAR} cvfz ${DESTDIR}${PREFIX}/macos/OpenBeans.app.tgz -C ${WRKSRC} OpenBeans.app
+	${TAR} cvfz ${DESTDIR}${PREFIX}/zip/OpenBeans.tgz -C ${PREFIX}/ openbeans-2019.06
 	${CP} ${WRKSRC}/sign-macos.sh ${DESTDIR}${PREFIX}/macos
 
 .include "../../mk/bsd.pkg.mk"

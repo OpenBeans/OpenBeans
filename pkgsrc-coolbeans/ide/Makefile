@@ -17,8 +17,9 @@
 PATCH_DIST_STRIP=-p1
 PATCH_STRIP=-p1
 
-DISTNAME=	release100
-PKGNAME= coolbeans-2018.12
+DISTNAME= openbeans
+# a version name is required, can't just use openbsd
+PKGNAME= openbeans-2019.06
 CATEGORIES= devel
 EXTRACT_SUFX=	.zip
 
@@ -142,9 +143,9 @@ pre-configure:
 
 post-build:
 	${MKDIR} ${DESTDIR}${PREFIX}
-	# this will create a coolbeans folder in dest dir
+	# this will create an openbeans folder in dest dir
 	unzip -q ${WRKSRC}/nbbuild/NetBeans*.zip -d ${DESTDIR}${PREFIX}
-	${MV} ${DESTDIR}${PREFIX}/coolbeans ${DESTDIR}${PREFIX}/${PKGNAME}
+	${MV} ${DESTDIR}${PREFIX}/openbeans ${DESTDIR}${PREFIX}/${PKGNAME}
 	#${CP} -R ${WRKSRC}/nbbuild/netbeans ${DESTDIR}${PREFIX}/netbeans
 	${CP} -R ${WRKSRC}/nbbuild/nbms ${DESTDIR}${PREFIX}/nbms
 

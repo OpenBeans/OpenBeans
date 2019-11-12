@@ -194,7 +194,7 @@ index b233bd7381..46ed8b830f 100644
  Format_OperatingSystem_Value={0} version {1} running on {2}
  #NOI18N
 -URL_ON_IMG=https://netbeans.apache.org/
-+URL_ON_IMG=http://coolbeans.xyz
++URL_ON_IMG=http://www.openbeans.org
  
  #SwingBrowser
  LBL_SwingBrowserDescription=Simple HTML Browser based on a Swing component
@@ -207,7 +207,7 @@ index 301d991a31..381adeaf66 100644
  HINT_WebBrowser=Web Browser
  #NOI18N
 -PROP_HomePage=https://netbeans.apache.org/
-+PROP_HomePage=http://coolbeans.xyz/
++PROP_HomePage=http://www.openbeans.org
  ACS_HtmlBrowser=Browser view
  ACSD_HtmlBrowser=N/A
  ACS_HtmlBrowser_Location=Location

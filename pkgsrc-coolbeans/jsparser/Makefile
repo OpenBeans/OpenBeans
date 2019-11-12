@@ -30,22 +30,22 @@ MAINTAINER=	INSERT_YOUR_MAIL_ADDRESS_HERE
 EXTRACT_OPTS_ZIP=-d jsparser
 WRKSRC=		${WRKDIR}/jsparser
 
-DEPENDS += coolbeans:../../coolbeans/ide
+DEPENDS += openbeans:../../coolbeans/ide
 
 pre-configure:
 	${CP} -R ${FILESDIR}/* ${WRKSRC}
 
 do-install:
 	${MKDIR} ${DESTDIR}${PREFIX}/nbms/jsparser
-	${MKDIR} ${DESTDIR}${PREFIX}/coolbeans-2018.12/webcommon/modules/ext
+	${MKDIR} ${DESTDIR}${PREFIX}/openbeans-2019.06/webcommon/modules/ext
 	# register cluster, as a separate file, if needed. But using webcommon by default
-	#${MKDIR} ${DESTDIR}${PREFIX}/coolbeans-2018.12/etc
-	#echo 'jsparser' > ${DESTDIR}${PREFIX}/coolbeans-2018.12/etc/netbeans_jsparser.clusters
+	#${MKDIR} ${DESTDIR}${PREFIX}/openbeans-2019.06/etc
+	#echo 'jsparser' > ${DESTDIR}${PREFIX}/openbeans-2019.06/etc/netbeans_jsparser.clusters
 	# create cluster
-	unpack200 ${WRKSRC}/netbeans/modules/ext/com.oracle.js.parser.jar.pack.gz ${DESTDIR}${PREFIX}/coolbeans-2018.12/webcommon/modules/ext/com.oracle.js.parser.jar
-	unpack200 ${WRKSRC}/netbeans/modules/org-netbeans-libs-oracle-jsparser.jar.pack.gz ${DESTDIR}${PREFIX}/coolbeans-2018.12/webcommon/modules/org-netbeans-libs-oracle-jsparser.jar
-	${CP} -R ${WRKSRC}/netbeans/config ${DESTDIR}${PREFIX}/coolbeans-2018.12/webcommon/config
-	${CP} -R ${WRKSRC}/netbeans/update_tracking ${DESTDIR}${PREFIX}/coolbeans-2018.12/webcommon
+	unpack200 ${WRKSRC}/netbeans/modules/ext/com.oracle.js.parser.jar.pack.gz ${DESTDIR}${PREFIX}/openbeans-2019.06/webcommon/modules/ext/com.oracle.js.parser.jar
+	unpack200 ${WRKSRC}/netbeans/modules/org-netbeans-libs-oracle-jsparser.jar.pack.gz ${DESTDIR}${PREFIX}/openbeans-2019.06/webcommon/modules/org-netbeans-libs-oracle-jsparser.jar
+	${CP} -R ${WRKSRC}/netbeans/config ${DESTDIR}${PREFIX}/openbeans-2019.06/webcommon/config
+	${CP} -R ${WRKSRC}/netbeans/update_tracking ${DESTDIR}${PREFIX}/openbeans-2019.06/webcommon
 	# nbms	
 	${CP} ${WRKSRC}/catalog.xml ${DESTDIR}${PREFIX}/nbms/jsparser/updates.xml
 	${CP} ${DISTDIR}/jsparser.zip ${DESTDIR}${PREFIX}/nbms/jsparser/jsparser.nbm

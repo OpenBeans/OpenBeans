@@ -30,7 +30,7 @@ WRKSRC=		${WRKDIR}
 
 EXTRACT_DIR.OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.3_7.zip = ${WRKSRC}/32bit
 
-DEPENDS += coolbeans:../../coolbeans/ide
+DEPENDS += openbeans:../../coolbeans/ide
 
 APP_VERSION=2018.12
 
@@ -41,11 +41,11 @@ pre-configure:
 pre-install:
 	${MKDIR} ${DESTDIR}${PREFIX}/windows/64bit
 	${MKDIR} ${DESTDIR}${PREFIX}/windows/32bit
-	#unzip coolbeans 
-	../../mk/extract/extract -d ${DESTDIR}${PREFIX}/windows/64bit ${PREFIX}/zip/CoolBeans.tgz
-	${MV} ${DESTDIR}${PREFIX}/windows/64bit/coolbeans-2018.12 ${DESTDIR}${PREFIX}/windows/64bit/coolbeans
+	#unzip
+	../../mk/extract/extract -d ${DESTDIR}${PREFIX}/windows/64bit ${PREFIX}/zip/OpenBeans.tgz
+	${MV} ${DESTDIR}${PREFIX}/windows/64bit/openbeans-2019.06 ${DESTDIR}${PREFIX}/windows/64bit/openbeans
 	#and copy again on 32bit
-	${CP} -R ${DESTDIR}${PREFIX}/windows/64bit/coolbeans ${DESTDIR}${PREFIX}/windows/32bit
+	${CP} -R ${DESTDIR}${PREFIX}/windows/64bit/openbeans ${DESTDIR}${PREFIX}/windows/32bit
 	#copy installer stuff
 	${CP} ${WRKSRC}/coolbeans-setup.iss ${DESTDIR}${PREFIX}/windows/64bit
 	${CP} ${WRKSRC}/coolbeans-setup32.iss ${DESTDIR}${PREFIX}/windows/32bit
@@ -54,12 +54,12 @@ pre-install:
 	${CP} ${WRKSRC}/win-build.bat ${DESTDIR}${PREFIX}/windows/64bit
 	${CP} ${WRKSRC}/win-build32.bat ${DESTDIR}${PREFIX}/windows/32bit
 	#copy 64bit JDK
-	${CP} -R ${WRKSRC}/jdk-11.0.3+7 ${DESTDIR}${PREFIX}/windows/64bit/coolbeans/jre
+	${CP} -R ${WRKSRC}/jdk-11.0.3+7 ${DESTDIR}${PREFIX}/windows/64bit/openbeans/jre
 	#copy 32bit JDK
-	${CP} -R ${WRKSRC}/32bit/jdk-11.0.3+7 ${DESTDIR}${PREFIX}/windows/32bit/coolbeans/jre
+	${CP} -R ${WRKSRC}/32bit/jdk-11.0.3+7 ${DESTDIR}${PREFIX}/windows/32bit/openbeans/jre
 	#make zips
-	cd ${DESTDIR}${PREFIX}/windows; zip -9 ${DESTDIR}${PREFIX}/windows/CoolBeans-Windows.64bit.zip -r 64bit
-	cd ${DESTDIR}${PREFIX}/windows; zip -9 ${DESTDIR}${PREFIX}/windows/CoolBeans-Windows.32bit.zip -r 32bit 
+	cd ${DESTDIR}${PREFIX}/windows; zip -9 ${DESTDIR}${PREFIX}/windows/OpenBeans-Windows.64bit.zip -r 64bit
+	cd ${DESTDIR}${PREFIX}/windows; zip -9 ${DESTDIR}${PREFIX}/windows/OpenBeans-Windows.32bit.zip -r 32bit
 	#remove old dirs (which probably should have been created elsewhere...)
 	${RM} -r ${DESTDIR}${PREFIX}/windows/64bit
 	${RM} -r ${DESTDIR}${PREFIX}/windows/32bit

@@ -29,7 +29,7 @@ index 5a18429261..9699daa760 100644
  public class ReportNBIssueAction extends SystemAction {
  
 -    private static final String ISSUE_REPORTER_LINK="https://netbeans.apache.org/nb/report-issue";
-+    private static final String ISSUE_REPORTER_LINK="http://coolbeans.xyz/report-issue";
++    private static final String ISSUE_REPORTER_LINK="http://www.openbeans.org/report-issue";
  
      public ReportNBIssueAction() {
          setIcon(null);

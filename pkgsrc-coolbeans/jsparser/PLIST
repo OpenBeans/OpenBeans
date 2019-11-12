@@ -1,7 +1,7 @@
 @comment $NetBSD$
-coolbeans-2018.12/webcommon/modules/ext/com.oracle.js.parser.jar
-coolbeans-2018.12/webcommon/modules/org-netbeans-libs-oracle-jsparser.jar
-coolbeans-2018.12/webcommon/update_tracking/org-netbeans-libs-oracle-jsparser.xml
-coolbeans-2018.12/webcommon/config/Modules/org-netbeans-libs-oracle-jsparser.xml
+openbeans-2019.06/webcommon/modules/ext/com.oracle.js.parser.jar
+openbeans-2019.06/webcommon/modules/org-netbeans-libs-oracle-jsparser.jar
+openbeans-2019.06/webcommon/update_tracking/org-netbeans-libs-oracle-jsparser.xml
+openbeans-2019.06/webcommon/config/Modules/org-netbeans-libs-oracle-jsparser.xml
 nbms/jsparser/jsparser.nbm
 nbms/jsparser/updates.xml

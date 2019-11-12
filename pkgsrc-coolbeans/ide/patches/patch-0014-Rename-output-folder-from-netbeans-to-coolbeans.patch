@@ -1,7 +1,7 @@
 From ce763bb2c74e87320f02dda10e64fd1ab257f455 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Thu, 8 Nov 2018 22:28:45 +0200
-Subject: [PATCH 14/33] Rename output folder from netbeans to coolbeans
+Subject: [PATCH 14/33] Rename output folder from netbeans to openbeans
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any
@@ -29,7 +29,7 @@ index 95273f9c2d..7c6f512258 100644
  # under the License.
  
 -netbeans.dest=netbeans
-+netbeans.dest=coolbeans
++netbeans.dest=openbeans
  test.dist.dir=build/testdist
  
  test.user.dir=testuserdir

@@ -29,7 +29,7 @@ MAINTAINER=	INSERT_YOUR_MAIL_ADDRESS_HERE
 
 WRKSRC=		${WRKDIR}/nb-java-x
 
-DEPENDS += coolbeans:../../coolbeans/ide
+DEPENDS += openbeans:../../coolbeans/ide
 
 MAKE_ENV+= PATH_TO_NETBEANS=${PKGDIR}/../ide/work/incubator-netbeans-release100/nbbuild/netbeans
 
@@ -41,15 +41,15 @@ pre-configure:
 
 post-build:
 	${MKDIR} ${DESTDIR}${PREFIX}/nbms
-	${MKDIR} ${DESTDIR}${PREFIX}/coolbeans-2018.12/etc
+	${MKDIR} ${DESTDIR}${PREFIX}/openbeans-2019.06/etc
 	# copy nbms
 	${CP} -R ${WRKSRC}/make/langtools/netbeans/nb-javac-modules/build/updates ${DESTDIR}${PREFIX}/nbms/nb-javac
 	# copy cluster
-	${CP} -R ${WRKSRC}/make/langtools/netbeans/nb-javac-modules/build/cluster ${DESTDIR}${PREFIX}/coolbeans-2018.12/nbjavac
+	${CP} -R ${WRKSRC}/make/langtools/netbeans/nb-javac-modules/build/cluster ${DESTDIR}${PREFIX}/openbeans-2019.06/nbjavac
 
 do-install:
 	# register cluster, as a separate file
-	#echo 'nbjavac' > ${DESTDIR}${PREFIX}/coolbeans-2018.12/etc/netbeans_nbjavac.clusters
+	#echo 'nbjavac' > ${DESTDIR}${PREFIX}/openbeans-2019.06/etc/netbeans_nbjavac.clusters
 	echo 'Nothing'
 
 .include "../../mk/bsd.pkg.mk"

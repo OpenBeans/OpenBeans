@@ -29,7 +29,7 @@ index 52a5d41d91..c4531ed9dd 100644
  
  #NOI18N
 -METRICS_INFO_URL=http://www.netbeans.org/about/usage-tracking.html
-+METRICS_INFO_URL=http://coolbeans.xyz/about/usage-tracking.html
++METRICS_INFO_URL=http://www.openbeans.org/about/usage-tracking.html
  
  CTL_Use_System_Proxy_Settings=&Use System Proxy Settings
  AN_Use_System_Proxy_Settings=Use System Proxy Settings

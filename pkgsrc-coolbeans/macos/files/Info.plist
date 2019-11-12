@@ -42,7 +42,7 @@ Contributor(s):
 <plist version="1.0">
   <dict>
     <key>CFBundleName</key>
-    <string>CoolBeans NETBEANS_VERSION</string>
+    <string>OpenBeans NETBEANS_VERSION</string>
 
     <key>CFBundleVersion</key>
     <string>NETBEANS_VERSION</string>

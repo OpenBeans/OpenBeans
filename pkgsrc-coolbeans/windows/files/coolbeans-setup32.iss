@@ -1,13 +1,13 @@
 [ISPP]
 ; #expr Exec("ReplaceVistaIcon.exe", "coolbeans\bin\netbeans.exe coolbeans.ico", ".")
 
-#define AppURL "http://coolbeans.xyz"
-#define appname "CoolBeans"
-#define appnamelowercase "coolbeans"
+#define AppURL "http://www.openbeans.org"
+#define appname "OpenBeans"
+#define appnamelowercase "openbeans"
 #define appcopyrightprefix  "Copyright (C) 2018-2019"
 #define apppublisher "Joseki Bold SRL"
-#define appemail "emi@coolbeans.xyz"
-#define appsourcedir "coolbeans"
+#define appemail "emi@openbeans.org"
+#define appsourcedir "openbeans"
 #define licensefile appsourcedir + "\LICENSE"
 #define iconfile "coolbeans.ico"
 #define SrcApp "netbeans" + ".exe"
