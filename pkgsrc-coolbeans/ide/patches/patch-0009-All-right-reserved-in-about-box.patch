@@ -1,7 +1,7 @@
-From 3f5db0331a856a14cf3947ae2ce5591800bcdc09 Mon Sep 17 00:00:00 2001
+From 0fcd19505fa419306865a1269be8d22ca5a0186c Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Tue, 6 Nov 2018 13:54:30 +0200
-Subject: [PATCH 09/33] All right reserved in about box
+Subject: [PATCH 09/32] All right reserved in about box
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any
@@ -21,7 +21,7 @@ License: Copyright (c) 2018, 2019 Emilian Marius Bold
  1 file changed, 2 insertions(+)
 
 diff --git a/platform/o.n.core/src/org/netbeans/core/ui/Bundle.properties b/platform/o.n.core/src/org/netbeans/core/ui/Bundle.properties
-index 46ed8b830f..e7e4efcffa 100644
+index ec543d7418..b79f1811fd 100644
 --- a/platform/o.n.core/src/org/netbeans/core/ui/Bundle.properties
 +++ b/platform/o.n.core/src/org/netbeans/core/ui/Bundle.properties
 @@ -23,6 +23,8 @@ LBL_Copyright=<div style="font-size: {0}pt; font-family: Verdana, 'Verdana CE',

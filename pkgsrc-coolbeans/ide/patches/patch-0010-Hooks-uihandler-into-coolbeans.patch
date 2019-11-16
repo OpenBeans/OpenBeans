@@ -1,7 +1,7 @@
-From 9075462b18d56c047e33c0803fab96fdfad444b3 Mon Sep 17 00:00:00 2001
+From 8a22647eb25ebdb37584ade4d9435e9475e41a17 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Tue, 6 Nov 2018 19:12:00 +0200
-Subject: [PATCH 10/33] Hooks uihandler into coolbeans
+Subject: [PATCH 10/32] Hooks uihandler into coolbeans
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any
@@ -21,7 +21,7 @@ License: Copyright (c) 2018, 2019 Emilian Marius Bold
  1 file changed, 8 insertions(+), 8 deletions(-)
 
 diff --git a/nb/ide.branding/uihandler/src/org/netbeans/modules/uihandler/Bundle_nb.properties b/nb/ide.branding/uihandler/src/org/netbeans/modules/uihandler/Bundle_nb.properties
-index 6877083360..cd9c183ec3 100644
+index 6877083360..65a212a021 100644
 --- a/nb/ide.branding/uihandler/src/org/netbeans/modules/uihandler/Bundle_nb.properties
 +++ b/nb/ide.branding/uihandler/src/org/netbeans/modules/uihandler/Bundle_nb.properties
 @@ -34,17 +34,17 @@ ApplicationVersionSysPropertyResourceArg=netbeans.buildnumber

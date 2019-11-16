@@ -1,0 +1,37 @@
+From dd2bb0b8ac4a0f5243e4350ccf47f137307d3a42 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Thu, 25 Jul 2019 22:24:28 +0300
+Subject: [PATCH 30/32] Bump php.kit version and php.editor implementation
+ version to trigger updates
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+Also bump the modules with implementation versions on php.editor
+---
+ php/php.editor/manifest.mf | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/php/php.editor/manifest.mf b/php/php.editor/manifest.mf
+index 9e9be53ff2..8c15a22f7d 100644
+--- a/php/php.editor/manifest.mf
++++ b/php/php.editor/manifest.mf
+@@ -3,4 +3,4 @@ AutoUpdate-Show-In-Client: false
+ OpenIDE-Module: org.netbeans.modules.php.editor
+ OpenIDE-Module-Layer: org/netbeans/modules/php/editor/resources/layer.xml
+ OpenIDE-Module-Localizing-Bundle: org/netbeans/modules/php/editor/resources/Bundle.properties
+-OpenIDE-Module-Implementation-Version: 2
++OpenIDE-Module-Implementation-Version: 3
+-- 
+2.21.0
+

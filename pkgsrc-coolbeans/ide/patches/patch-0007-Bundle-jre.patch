@@ -1,7 +1,7 @@
-From daf00683e73fae122dc74b537a49d1ed19b7cef9 Mon Sep 17 00:00:00 2001
+From 4a5f611bed721d7e66834cb302d8e29f85c0a09e Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Tue, 6 Nov 2018 13:51:23 +0200
-Subject: [PATCH 07/33] Bundle jre
+Subject: [PATCH 07/32] Bundle jre
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any
@@ -21,10 +21,10 @@ License: Copyright (c) 2018, 2019 Emilian Marius Bold
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/nb/ide.launcher/netbeans.conf b/nb/ide.launcher/netbeans.conf
-index 90b5637fe7..2bc2d6ab73 100644
+index 3b4a5654bb..d7752c9c47 100644
 --- a/nb/ide.launcher/netbeans.conf
 +++ b/nb/ide.launcher/netbeans.conf
-@@ -73,7 +73,7 @@ netbeans_default_options="-J-XX:+UseStringDeduplication -J-Xss2m -J-Djdk.gtk.ver
+@@ -73,7 +73,7 @@ netbeans_default_options="-J-XX:+UseStringDeduplication -J-Djdk.lang.Process.all
  # installer points to one of those in the NetBeans application shortcut 
  # based on the Java version selected at installation time.
  #

@@ -23,9 +23,9 @@ PKGNAME= openbeans-2019.06
 CATEGORIES= devel
 EXTRACT_SUFX=	.zip
 
-DISTFILES=      release111.zip netbeans-releases.zip maven-search-remote.zip
+DISTFILES=      release112.zip netbeans-releases.zip maven-search-remote.zip
 SITES.netbeans-releases.zip = -https://github.com/emilianbold/netbeans-releases/archive/2fd6dc84c187e3c79a959b3ddb4da1a9703659c7.zip
-SITES.release111.zip = -https://github.com/apache/netbeans/archive/d9ec4e569177f19413439e1775707928cc93e1a5.zip
+SITES.release112.zip = -https://github.com/apache/netbeans/archive/03b4f67dc6354e9e6b5d937c52a23fafd0f6057f.zip
 SITES.maven-search-remote.zip = -https://bitbucket.org/emilianbold/maven.search.remote/get/1.1.zip
 
 MAINTAINER=	INSERT_YOUR_MAIL_ADDRESS_HERE
@@ -41,7 +41,7 @@ post-extract:
 	# rename netbeans-releases folder
 	${MV} ${WRKDIR}/netbeans-releases-2fd6dc84c187e3c79a959b3ddb4da1a9703659c7 ${NBRELEASESRC}
 	# rename incubator-netbeans folder
-	${MV} ${WRKDIR}/netbeans-d9ec4e569177f19413439e1775707928cc93e1a5 ${WRKSRC}
+	${MV} ${WRKDIR}/netbeans-03b4f67dc6354e9e6b5d937c52a23fafd0f6057f ${WRKSRC}
 	#move maven-search
 	${MV} ${WRKDIR}/emilianbold-maven.search.remote-da0c42b68c13/ro.emilianbold.modules.maven.search.remote ${WRKSRC}/java
 	#remove standalone metadata

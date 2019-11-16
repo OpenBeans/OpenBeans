@@ -1,7 +1,7 @@
-From 230104eec3525fce1ff458c139b6d6b044f35937 Mon Sep 17 00:00:00 2001
+From 3030dc74211ef9066f80756c20fad8349cc6df7c Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Tue, 6 Nov 2018 11:15:11 +0200
-Subject: [PATCH 04/33] User dir and caches
+Subject: [PATCH 04/32] User dir and caches
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any
@@ -21,7 +21,7 @@ License: Copyright (c) 2018, 2019 Emilian Marius Bold
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/nb/ide.launcher/unix/netbeans b/nb/ide.launcher/unix/netbeans
-index 73c59af07e..73b6d045a1 100644
+index 2dea0413a5..5205153068 100644
 --- a/nb/ide.launcher/unix/netbeans
 +++ b/nb/ide.launcher/unix/netbeans
 @@ -41,13 +41,13 @@ cd "$old"

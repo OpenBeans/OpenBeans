@@ -1,7 +1,7 @@
-From c50f8390317349a0fed38b1819727a66a83b8919 Mon Sep 17 00:00:00 2001
+From 9dc45b7a4829258eb7e9d310e054117396b9beb3 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Tue, 6 Nov 2018 13:52:05 +0200
-Subject: [PATCH 08/33] Temporarily exclude welcome module
+Subject: [PATCH 08/32] Temporarily exclude welcome module
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any
@@ -40,10 +40,10 @@ index 79840d1123..7155ba823f 100644
              <public-packages/>
          </data>
 diff --git a/nbbuild/cluster.properties b/nbbuild/cluster.properties
-index f33725d7b2..c8a690a5c8 100644
+index 786cebbac2..341f92a786 100644
 --- a/nbbuild/cluster.properties
 +++ b/nbbuild/cluster.properties
-@@ -872,8 +872,7 @@ nb.cluster.nb=\
+@@ -874,8 +874,7 @@ nb.cluster.nb=\
          ko4j.debugging,\
          o.n.upgrader,\
          uihandler.exceptionreporter,\

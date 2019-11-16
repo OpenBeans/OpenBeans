@@ -1,0 +1,51 @@
+From b748a409fb7f4a8338a611a7ff3a33133f780a86 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Fri, 7 Jun 2019 22:56:15 +0300
+Subject: [PATCH 25/32] Includes the patches profiler DLLs on Windows x64
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ profiler/lib.profiler/build.xml                      | 6 ++++++
+ profiler/lib.profiler/external/patched-binaries-list | 1 +
+ 2 files changed, 7 insertions(+)
+ create mode 100644 profiler/lib.profiler/external/patched-binaries-list
+
+diff --git a/profiler/lib.profiler/build.xml b/profiler/lib.profiler/build.xml
+index 342df08c63..239138a920 100644
+--- a/profiler/lib.profiler/build.xml
++++ b/profiler/lib.profiler/build.xml
+@@ -26,6 +26,12 @@
+     <property name="profiler.cluster" value="./release"/>
+     <target name="-process.release.files">
+         <unzip src="external/profiler-external-binaries-8.2.zip" dest="${profiler.cluster}"/>
++        <downloadbinaries cache="${binaries.cache}" server="${binaries.server}">
++            <manifest dir=".">
++                <include name="external/patched-binaries-list"/>
++            </manifest>
++        </downloadbinaries>
++        <unzip src="external/profilerinterface-jdk16-windows-amd64.zip" dest="${profiler.cluster}/lib/deployed/jdk16/windows-amd64"/>
+     </target>
+ 
+   <!-- Compile the JFluid engine system library, that depends on JDK version - so there are two libraries -->
+diff --git a/profiler/lib.profiler/external/patched-binaries-list b/profiler/lib.profiler/external/patched-binaries-list
+new file mode 100644
+index 0000000000..711736508a
+--- /dev/null
++++ b/profiler/lib.profiler/external/patched-binaries-list
+@@ -0,0 +1 @@
++4BD03BB5A7BF4F69C60882900FEEDA8CEECDA06E https://github.com/pedro-w/incubator-netbeans/releases/download/v0.1-alpha/profilerinterface-jdk16-windows-amd64.zip
+-- 
+2.21.0
+

@@ -1,7 +1,7 @@
-From 5882e918abf35bf235b68373b64652a06b9b9b71 Mon Sep 17 00:00:00 2001
+From ef6596fc4434a2cf089cd60031a62bd194cbf911 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Mon, 5 Nov 2018 19:12:22 +0200
-Subject: [PATCH 03/33] Changes Update Center URLs
+Subject: [PATCH 03/32] Changes Update Center URLs
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any
@@ -17,15 +17,16 @@ License: Copyright (c) 2018, 2019 Emilian Marius Bold
  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ---
- .../modules/updatecenters/resources/Bundle.properties       | 6 +++---
- .../netbeans/modules/updatecenters/resources/mf-layer.xml   | 2 +-
- 2 files changed, 4 insertions(+), 4 deletions(-)
+ .../netbeans/modules/updatecenters/resources/Bundle.properties  | 2 +-
+ .../org/netbeans/modules/updatecenters/resources/mf-layer.xml   | 2 +-
+ nbbuild/build.xml                                               | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/Bundle.properties b/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/Bundle.properties
-index ba0a024f8e..be7af9095f 100644
+index d16c69005e..3c178c9d94 100644
 --- a/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/Bundle.properties
 +++ b/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/Bundle.properties
-@@ -24,13 +24,13 @@ OpenIDE-Module-Long-Description=It's module which contains the declaration of Co
+@@ -24,7 +24,7 @@ OpenIDE-Module-Long-Description=It's module which contains the declaration of Op
  OpenIDE-Module-Short-Description=Declares OpenBeans autoupdate centers.
  
  Services/AutoupdateType/distribution-update-provider.instance=OpenBeans Distribution
@@ -34,14 +35,6 @@ index ba0a024f8e..be7af9095f 100644
  Services/AutoupdateType/82pluginportal-update-provider.instance=OpenBeans 8.2 Plugin Portal
  
  #NOI18N
--URL_Distribution=https://netbeans.apache.org/nb/updates/11.1/updates.xml.gz?{$netbeans.hash.code}
-+URL_Distribution=https://www.openbeans.org/nb/updates/2019.06/updates.xml.gz?{$netbeans.hash.code}
- #NOI18N
--URL_PluginPortal=https://netbeans.apache.org/nb/plugins/11.1/catalog.xml.gz
-+URL_PluginPortal=https://www.openbeans.org/nbpluginportal/updates/2019.06/catalog.xml.gz
- #NOI18N
- URL_82PluginPortal=http://updates.netbeans.org/netbeans/updates/8.2/uc/final/distribution/catalog.xml.gz
- 
 diff --git a/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/mf-layer.xml b/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/mf-layer.xml
 index de190a3bfd..0d3e1f2b04 100644
 --- a/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/mf-layer.xml
@@ -55,6 +48,19 @@ index de190a3bfd..0d3e1f2b04 100644
            <attr name="enabled" boolvalue="false"/>
            <attr name="instanceOf" stringvalue="org.netbeans.spi.autoupdate.UpdateProvider"/>
            <attr name="instanceCreate" methodvalue="org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogFactory.createUpdateProvider"/>
+diff --git a/nbbuild/build.xml b/nbbuild/build.xml
+index aeb09dfb5f..9379a2049e 100644
+--- a/nbbuild/build.xml
++++ b/nbbuild/build.xml
+@@ -115,7 +115,7 @@
+             <isset property="metabuild.jsonurl"/>
+         </not>
+     </condition>
+-    <get dest="${metabuild.releasejson}" skipexisting="false" src="${metabuild.jsonurl}" />
++    <get dest="${metabuild.releasejson}" skipexisting="true" src="${metabuild.jsonurl}" />
+     <!-- read info from gitinfo.properties , if present in source bundle copy gitinfo-->
+     <copy file="${nb_all}/nbbuild/gitinfo.properties" tofile="${nb_all}/nbbuild/build/gitinfo.properties" failonerror="false"/>
+     <copy file="${nb_all}/nbbuild/netbeansrelease.properties" tofile="${nb_all}/nbbuild/build/netbeansrelease.properties" failonerror="false"/>
 -- 
 2.21.0
 

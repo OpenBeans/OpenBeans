@@ -1,0 +1,50 @@
+From ef8d8068a802a954c982afe9d601a440395012da Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Mon, 11 Nov 2019 13:58:15 +0200
+Subject: [PATCH 32/32] Re-adds wildfly
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ contrib/javaee.wildfly/external/binaries-list | 2 ++
+ nbbuild/cluster.properties                    | 1 +
+ 2 files changed, 3 insertions(+)
+
+diff --git a/contrib/javaee.wildfly/external/binaries-list b/contrib/javaee.wildfly/external/binaries-list
+index 415c03f623..8719babe3a 100644
+--- a/contrib/javaee.wildfly/external/binaries-list
++++ b/contrib/javaee.wildfly/external/binaries-list
+@@ -15,5 +15,7 @@
+ # specific language governing permissions and limitations
+ # under the License.
+ 
++8859ED09DF034476CC6B47C9B991D65E78078A90 javaee-wildfly-glassfish-resources.zip
+ 4C29DE96843375053399E0869CA0FD147272ABFA javaee-wildfly-ironjacamar-resources.zip
+ 91F3DB873E1EE50E5514877F8539E503F7135041 javaee-wildfly-jboss-resources.zip
++6ED21E1893402130E3CFDC7F7D446395CF1B0B17 javaee-wildfly-w3c-resources.zip
+diff --git a/nbbuild/cluster.properties b/nbbuild/cluster.properties
+index 84803286d8..521dd68085 100644
+--- a/nbbuild/cluster.properties
++++ b/nbbuild/cluster.properties
+@@ -750,6 +750,7 @@ nb.cluster.enterprise=\
+         api.web.webmodule,\
+         cloud.amazon,\
+         cloud.common,\
++        contrib/javaee.wildfly,\
+         el.lexer,\
+         glassfish.common,\
+         glassfish.eecommon,\
+-- 
+2.21.0
+

@@ -1,0 +1,25 @@
+{
+    "master": {
+        "position": "5",
+        "ant": "Ant (latest)",
+        "jdk": "JDK 1.8 (latest)",
+        "jdk_apidoc": "https://docs.oracle.com/javase/8/docs/api/",
+        "maven": "Maven 3.3.9",
+        "versionName": "2019.12",
+        "mavenversion": "RELEASE112",
+        "tlp": "true",
+        "apidocurl": "https://bits.netbeans.org/11.2/javadoc",
+        "update_url": "https://www.openbeans.org/nb/updates/2019.06/updates.xml.gz?{$netbeans.hash.code}",
+        "plugin_url": "https://www.openbeans.org/nbpluginportal/updates/2019.06/catalog.xml.gz",
+        "releasedate": {
+            "day": "-",
+            "month": "-",
+            "year": "-"
+        },
+        "previousreleasedate": {
+            "day": "22",
+            "month": "07",
+            "year": "2019"
+        }
+    }
+}

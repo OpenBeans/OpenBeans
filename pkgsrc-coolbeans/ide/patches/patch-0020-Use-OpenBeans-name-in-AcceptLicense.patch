@@ -1,0 +1,47 @@
+From ee357c40c8055cd2f1601e8af6e6d7c17e3e49f9 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Sat, 10 Nov 2018 07:14:47 +0200
+Subject: [PATCH 20/32] Use OpenBeans name in AcceptLicense
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ nb/o.n.upgrader/src/org/netbeans/license/Bundle.properties | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/nb/o.n.upgrader/src/org/netbeans/license/Bundle.properties b/nb/o.n.upgrader/src/org/netbeans/license/Bundle.properties
+index cab3db2fb1..abc23b5da9 100644
+--- a/nb/o.n.upgrader/src/org/netbeans/license/Bundle.properties
++++ b/nb/o.n.upgrader/src/org/netbeans/license/Bundle.properties
+@@ -19,7 +19,7 @@
+ MSG_LicenseDlgTitle=License Agreement
+ MSG_LicenseDlgLabelTop=Please read the following license agreement carefully.
+ MSG_LicenseDlgLabelBottom=If you accept all terms of the agreement, click I Accept \
+-to start NetBeans IDE. You must accept the agreement to start NetBeans IDE.
++to start OpenBeans IDE. You must accept the agreement to start OpenBeans IDE.
+ MSG_LicenseYesButton=I &Accept
+ MSG_LicenseNoButton=E&xit
+ 
+@@ -32,7 +32,7 @@ ACSD_LicenseDlg=License Agreement
+ ACSN_EditorPane=License Text
+ ACSD_EditorPane=Please read the following license agreement carefully. \
+ If you accept all terms of the agreement, click I Accept \
+-to start NetBeans IDE. You must accept the agreement to start NetBeans IDE.
++to start OpenBeans IDE. You must accept the agreement to start OpenBeans IDE.
+ 
+ ACSN_AcceptButton=Accept Button
+ ACSD_AcceptButton=Click to accept license and continue
+-- 
+2.21.0
+

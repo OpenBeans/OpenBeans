@@ -1,0 +1,45 @@
+From d1a379d24a9fd618d03ba5324f5e76466dcb4a82 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Fri, 9 Nov 2018 00:11:48 +0200
+Subject: [PATCH 14/32] Removes `dev` from about box description, makes splash
+ screen font bigger and blue and display the app name in the running text
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ .../core.startup/src/org/netbeans/core/startup/Splash.java   | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/platform/core.startup/src/org/netbeans/core/startup/Splash.java b/platform/core.startup/src/org/netbeans/core/startup/Splash.java
+index c9985ca2cb..18017127c1 100644
+--- a/platform/core.startup/src/org/netbeans/core/startup/Splash.java
++++ b/platform/core.startup/src/org/netbeans/core/startup/Splash.java
+@@ -501,10 +501,13 @@ public final class Splash implements Stamps.Updater {
+             }
+         }
+ 
++
++        final String windowTitle = NbBundle.getMessage(Splash.class, "LBL_splash_window_title");
+         /**
+          * Defines the single line of text this component will display.
+          */
+-        public void setText(final String text) {
++        public void setText(String atext) {
++            final String text = windowTitle + " | " + atext;
+             // trying to set again the same text?
+             if (text != null && text.equals(this.text)) {
+                 return;
+-- 
+2.21.0
+

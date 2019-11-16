@@ -1,7 +1,7 @@
-From 75967eee753f29e4f660871b15d606e86841a973 Mon Sep 17 00:00:00 2001
+From ac9e4652715322922dffd364c7a09f167d2dca1f Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Tue, 6 Nov 2018 11:15:44 +0200
-Subject: [PATCH 05/33] Support relative JRE on macOS
+Subject: [PATCH 05/32] Support relative JRE on macOS
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any

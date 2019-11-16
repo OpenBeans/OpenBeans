@@ -1,0 +1,293 @@
+From 907acae80469eff69bc81c2cf5588fafd033ec37 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Fri, 19 Jul 2019 13:05:25 +0300
+Subject: [PATCH 29/32] Include JavaFX libraries directly
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ ergonomics/ide.ergonomics/enterprise.properties    |  2 --
+ ergonomics/ide.ergonomics/java.properties          |  6 ------
+ ergonomics/ide.ergonomics/webcommon.properties     |  1 -
+ extra/libs.javafx.linux/build.xml                  |  2 +-
+ .../libs.javafx.linux/nbproject/project.properties |  6 ------
+ extra/libs.javafx.macosx/build.xml                 |  2 +-
+ .../nbproject/project.properties                   |  6 ------
+ extra/libs.javafx.win/build.xml                    |  2 +-
+ extra/libs.javafx.win/nbproject/project.properties |  6 ------
+ nb/updatecenters/build.xml                         |  2 +-
+ nb/updatecenters/nbproject/project.properties      |  4 ++--
+ .../modules/updatecenters/resources/mf-layer.xml   |  2 ++
+ nbbuild/build.xml                                  | 14 +++++++++++++-
+ nbbuild/cluster.properties                         | 13 +++++++------
+ 14 files changed, 28 insertions(+), 40 deletions(-)
+
+diff --git a/ergonomics/ide.ergonomics/enterprise.properties b/ergonomics/ide.ergonomics/enterprise.properties
+index 7ae04e9631..a3207697b2 100644
+--- a/ergonomics/ide.ergonomics/enterprise.properties
++++ b/ergonomics/ide.ergonomics/enterprise.properties
+@@ -22,5 +22,3 @@ project.xpath.nbproject/project.xml=\
+ project.xpath.src/main/webapp=
+ 
+ mainModule=org.netbeans.modules.j2ee.kit
+-
+-LBL_Ergonomics_Extra_Required=Javascript Parser is required by HTML5 features.
+diff --git a/ergonomics/ide.ergonomics/java.properties b/ergonomics/ide.ergonomics/java.properties
+index 6c6d171286..538fbde875 100644
+--- a/ergonomics/ide.ergonomics/java.properties
++++ b/ergonomics/ide.ergonomics/java.properties
+@@ -20,9 +20,3 @@ project.file.../java.base/share/classes/java/lang/Object.java=org.netbeans.modul
+ projectImporter=Eclipse
+ 
+ mainModule=org.netbeans.modules.java.kit
+-extra.modules=org.netbeans.modules.nbjavac
+-extra.modules.recommended.min.jdk=9
+-extra.modules.1=org\\.netbeans\\.libs\\.javafx\\.(linux|win|macosx)
+-
+-LBL_Ergonomics_Extra_Required=Additional modules are needed to run Java SE support on JDK 8.
+-LBL_Ergonomics_Extra_Recommended=Additional modules are recommended to run Java SE support.
+diff --git a/ergonomics/ide.ergonomics/webcommon.properties b/ergonomics/ide.ergonomics/webcommon.properties
+index 723608b7ca..cbc829e0fa 100644
+--- a/ergonomics/ide.ergonomics/webcommon.properties
++++ b/ergonomics/ide.ergonomics/webcommon.properties
+@@ -16,4 +16,3 @@
+ # under the License.
+ 
+ mainModule=org.netbeans.modules.web.client.kit
+-LBL_Ergonomics_Extra_Required=Javascript Parser is required for Javascript + HTML support to work properly.
+diff --git a/extra/libs.javafx.linux/build.xml b/extra/libs.javafx.linux/build.xml
+index 9469085669..4c3cecf9ea 100644
+--- a/extra/libs.javafx.linux/build.xml
++++ b/extra/libs.javafx.linux/build.xml
+@@ -19,7 +19,7 @@
+     under the License.
+ 
+ -->
+-<project basedir="." default="build" name="extra/libs.javafx.linux">
++<project basedir="." default="build" name="platform/libs.javafx.linux">
+     <description>Builds, tests, and runs the project org.netbeans.libs.javafx.linux</description>
+     <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff --git a/extra/libs.javafx.linux/nbproject/project.properties b/extra/libs.javafx.linux/nbproject/project.properties
+index 33ffdbdb2f..709002b524 100644
+--- a/extra/libs.javafx.linux/nbproject/project.properties
++++ b/extra/libs.javafx.linux/nbproject/project.properties
+@@ -21,16 +21,10 @@ javac.compilerargs=-Xlint -Xlint:-serial
+ is.autoload=true
+ 
+ release.external/javafx-base-13-linux.jar=modules/ext/javafx-base-13-linux.jar
+-release.external/javafx-base-13-linux.jar.external=modules/ext/javafx-base-13-linux.jar.external
+ release.external/javafx-controls-13-linux.jar=modules/ext/javafx-controls-13-linux.jar
+-release.external/javafx-controls-13-linux.jar.external=modules/ext/javafx-controls-13-linux.jar.external
+ release.external/javafx-graphics-13-linux.jar=modules/ext/javafx-graphics-13-linux.jar
+-release.external/javafx-graphics-13-linux.jar.external=modules/ext/javafx-graphics-13-linux.jar.external
+ release.external/javafx-media-13-linux.jar=modules/ext/javafx-media-13-linux.jar
+-release.external/javafx-media-13-linux.jar.external=modules/ext/javafx-media-13-linux.jar.external
+ release.external/javafx-swing-13-linux.jar=modules/ext/javafx-swing-13-linux.jar
+-release.external/javafx-swing-13-linux.jar.external=modules/ext/javafx-swing-13-linux.jar.external
+ release.external/javafx-web-13-linux.jar=modules/ext/javafx-web-13-linux.jar
+-release.external/javafx-web-13-linux.jar.external=modules/ext/javafx-web-13-linux.jar.external
+ 
+ license.file.override=${nb_all}/nbbuild/licenses/GPL-2-CP
+diff --git a/extra/libs.javafx.macosx/build.xml b/extra/libs.javafx.macosx/build.xml
+index daee6cd6b7..4fb69393b6 100644
+--- a/extra/libs.javafx.macosx/build.xml
++++ b/extra/libs.javafx.macosx/build.xml
+@@ -19,7 +19,7 @@
+     under the License.
+ 
+ -->
+-<project basedir="." default="build" name="extra/libs.javafx.macosx">
++<project basedir="." default="build" name="platform/libs.javafx.macosx">
+     <description>Builds, tests, and runs the project org.netbeans.libs.javafx.macosx</description>
+     <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff --git a/extra/libs.javafx.macosx/nbproject/project.properties b/extra/libs.javafx.macosx/nbproject/project.properties
+index d6899f8a9d..4f889d80a5 100644
+--- a/extra/libs.javafx.macosx/nbproject/project.properties
++++ b/extra/libs.javafx.macosx/nbproject/project.properties
+@@ -21,16 +21,10 @@ javac.compilerargs=-Xlint -Xlint:-serial
+ is.autoload=true
+ 
+ release.external/javafx-base-13-mac.jar=modules/ext/javafx-base-13-mac.jar
+-release.external/javafx-base-13-mac.jar.external=modules/ext/javafx-base-13-mac.jar.external
+ release.external/javafx-controls-13-mac.jar=modules/ext/javafx-controls-13-mac.jar
+-release.external/javafx-controls-13-mac.jar.external=modules/ext/javafx-controls-13-mac.jar.external
+ release.external/javafx-graphics-13-mac.jar=modules/ext/javafx-graphics-13-mac.jar
+-release.external/javafx-graphics-13-mac.jar.external=modules/ext/javafx-graphics-13-mac.jar.external
+ release.external/javafx-media-13-mac.jar=modules/ext/javafx-media-13-mac.jar
+-release.external/javafx-media-13-mac.jar.external=modules/ext/javafx-media-13-mac.jar.external
+ release.external/javafx-swing-13-mac.jar=modules/ext/javafx-swing-13-mac.jar
+-release.external/javafx-swing-13-mac.jar.external=modules/ext/javafx-swing-13-mac.jar.external
+ release.external/javafx-web-13-mac.jar=modules/ext/javafx-web-13-mac.jar
+-release.external/javafx-web-13-mac.jar.external=modules/ext/javafx-web-13-mac.jar.external
+ 
+ license.file.override=${nb_all}/nbbuild/licenses/GPL-2-CP
+diff --git a/extra/libs.javafx.win/build.xml b/extra/libs.javafx.win/build.xml
+index aca97081a9..9b991263e9 100644
+--- a/extra/libs.javafx.win/build.xml
++++ b/extra/libs.javafx.win/build.xml
+@@ -19,7 +19,7 @@
+     under the License.
+ 
+ -->
+-<project basedir="." default="build" name="extra/libs.javafx.win">
++<project basedir="." default="build" name="platform/libs.javafx.win">
+     <description>Builds, tests, and runs the project org.netbeans.libs.javafx.win</description>
+     <import file="../../nbbuild/templates/projectized.xml"/>
+ </project>
+diff --git a/extra/libs.javafx.win/nbproject/project.properties b/extra/libs.javafx.win/nbproject/project.properties
+index a64c36fa1c..08dbf56f29 100644
+--- a/extra/libs.javafx.win/nbproject/project.properties
++++ b/extra/libs.javafx.win/nbproject/project.properties
+@@ -21,16 +21,10 @@ javac.compilerargs=-Xlint -Xlint:-serial
+ is.autoload=true
+ 
+ release.external/javafx-base-13-win.jar=modules/ext/javafx-base-13-win.jar
+-release.external/javafx-base-13-win.jar.external=modules/ext/javafx-base-13-win.jar.external
+ release.external/javafx-controls-13-win.jar=modules/ext/javafx-controls-13-win.jar
+-release.external/javafx-controls-13-win.jar.external=modules/ext/javafx-controls-13-win.jar.external
+ release.external/javafx-graphics-13-win.jar=modules/ext/javafx-graphics-13-win.jar
+-release.external/javafx-graphics-13-win.jar.external=modules/ext/javafx-graphics-13-win.jar.external
+ release.external/javafx-media-13-win.jar=modules/ext/javafx-media-13-win.jar
+-release.external/javafx-media-13-win.jar.external=modules/ext/javafx-media-13-win.jar.external
+ release.external/javafx-swing-13-win.jar=modules/ext/javafx-swing-13-win.jar
+-release.external/javafx-swing-13-win.jar.external=modules/ext/javafx-swing-13-win.jar.external
+ release.external/javafx-web-13-win.jar=modules/ext/javafx-web-13-win.jar
+-release.external/javafx-web-13-win.jar.external=modules/ext/javafx-web-13-win.jar.external
+ 
+ license.file.override=${nb_all}/nbbuild/licenses/GPL-2-CP
+diff --git a/nb/updatecenters/build.xml b/nb/updatecenters/build.xml
+index b9a6577a51..ba77fa480c 100644
+--- a/nb/updatecenters/build.xml
++++ b/nb/updatecenters/build.xml
+@@ -24,7 +24,7 @@
+ 
+   <import file="../../nbbuild/templates/projectized.xml"/>
+ 
+-  <target name="compile" depends="projectized-common.compile,javafx-nbms,-branding"/>
++  <target name="compile" depends="projectized-common.compile,-branding"/>
+   <target name="-branding">
+       <replace file="${build.dir}/classes/org/netbeans/modules/updatecenters/resources/Bundle.properties" value="defaultvalue" propertyFile="${nb_all}/nbbuild/build/netbeansrelease.properties">
+            <replacefilter token="@@metabuild.DistributionURL@@" property="metabuild.DistributionURL"/>
+diff --git a/nb/updatecenters/nbproject/project.properties b/nb/updatecenters/nbproject/project.properties
+index b56701d984..18119ff5ed 100644
+--- a/nb/updatecenters/nbproject/project.properties
++++ b/nb/updatecenters/nbproject/project.properties
+@@ -19,5 +19,5 @@ is.eager=true
+ javac.compilerargs=-Xlint:unchecked
+ javac.source=1.6
+ 
+-release.build/ide.ks=core/ide.ks
+-extra.module.files=core/ide.ks
++#release.build/ide.ks=core/ide.ks
++#extra.module.files=core/ide.ks
+diff --git a/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/mf-layer.xml b/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/mf-layer.xml
+index 0d3e1f2b04..7631e390f6 100644
+--- a/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/mf-layer.xml
++++ b/nb/updatecenters/src/org/netbeans/modules/updatecenters/resources/mf-layer.xml
+@@ -55,6 +55,7 @@
+           <attr name="instanceCreate" methodvalue="org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogFactory.createUpdateProvider"/>
+       </file>
+ 
++<!--
+       <file name="3rdparty.instance">
+           <attr name="displayName" bundlevalue="org.netbeans.modules.updatecenters.resources.Bundle#3rdparty"/>
+           <attr name="iconBase" stringvalue="org/netbeans/modules/updatecenters/resources/updateAction.gif"/>
+@@ -64,6 +65,7 @@
+           <attr name="instanceOf" stringvalue="org.netbeans.spi.autoupdate.UpdateProvider"/>
+           <attr name="instanceCreate" methodvalue="org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogFactory.createUpdateProvider"/>
+       </file>
++-->
+ 
+    </folder>
+     
+diff --git a/nbbuild/build.xml b/nbbuild/build.xml
+index 9379a2049e..8e85a3555e 100644
+--- a/nbbuild/build.xml
++++ b/nbbuild/build.xml
+@@ -254,7 +254,7 @@ metabuild.hash=${metabuild.hash}</echo>
+     <sortsuitemodules unsortedmodules="${modules.fullpath}" sortedmodulesproperty="modules.sorted"/>
+   </target>
+ 
+-  <target name="init" depends="init-module-list,set-buildnumber">
++  <target name="init" depends="init-coolbeans,init-module-list,set-buildnumber">
+     <fail message="You need to have some modules checked out to build NetBeans. For example, try running the 'checkout' target.">
+         <condition>
+             <not>
+@@ -2256,4 +2256,16 @@ It is possible to use -Ddebug.port=3234 -Ddebug.pause=y to start the system in d
+         <reportFromLicenseinfo nball=".." report="${nb.build.dir}/rat-appendix.txt" />
+     </target>
+ 
++    <target name="init-coolbeans">
++        <copy todir="../platform/libs.javafx.linux">
++		<fileset dir="../extra/libs.javafx.linux" />
++	</copy>
++        <copy todir="../platform/libs.javafx.macosx">
++		<fileset dir="../extra/libs.javafx.macosx" />
++	</copy>
++        <copy todir="../platform/libs.javafx.win">
++		<fileset dir="../extra/libs.javafx.win" />
++	</copy>
++    </target>
++
+ </project>
+diff --git a/nbbuild/cluster.properties b/nbbuild/cluster.properties
+index 341f92a786..84803286d8 100644
+--- a/nbbuild/cluster.properties
++++ b/nbbuild/cluster.properties
+@@ -95,7 +95,6 @@ clusters.config.java.list=\
+         nb.cluster.java,\
+         nb.cluster.javafx,\
+         nb.cluster.profiler,\
+-        nb.cluster.3rdparty,\
+         nb.cluster.nb
+ 
+ clusters.config.enterprise.list=\
+@@ -227,6 +226,9 @@ nb.cluster.platform=\
+         lib.uihandler,\
+         libs.felix,\
+         libs.javafx,\
++        libs.javafx.linux,\
++        libs.javafx.macosx,\
++        libs.javafx.win,\
+         libs.jna,\
+         libs.jna.platform,\
+         libs.jsr223,\
+@@ -863,7 +865,6 @@ nb.cluster.nb.dir=nb
+ nb.cluster.nb.depends=\
+         nb.cluster.platform,\
+         nb.cluster.ide,\
+-        nb.cluster.3rdparty,\
+         nb.cluster.harness
+ nb.cluster.nb=\
+         autoupdate.pluginimporter,\
+@@ -879,10 +880,10 @@ nb.cluster.nb=\
+ nb.cluster.3rdparty.dir=extra
+ nb.cluster.3rdparty.depends=\
+         nb.cluster.platform
+-nb.cluster.3rdparty=\
+-        libs.javafx.linux,\
+-        libs.javafx.macosx,\
+-        libs.javafx.win
++nb.cluster.3rdparty=
++#       libs.javafx.linux,\
++#       libs.javafx.macosx,\
++#       libs.javafx.win
+ 
+ 
+ nb.cluster.harness.dir=harness
+-- 
+2.21.0
+

@@ -1,0 +1,58 @@
+From d47023ad88ac355497ebf48dc133803946333a44 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Tue, 25 Dec 2018 11:54:01 +0200
+Subject: [PATCH 24/32] Allows a direct URL in the external dependency file
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ .../nbbuild/extlibs/DownloadBinaries.java         | 15 +++++++++++++--
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+
+diff --git a/nbbuild/antsrc/org/netbeans/nbbuild/extlibs/DownloadBinaries.java b/nbbuild/antsrc/org/netbeans/nbbuild/extlibs/DownloadBinaries.java
+index 9e8b99b86a..664c2a2435 100644
+--- a/nbbuild/antsrc/org/netbeans/nbbuild/extlibs/DownloadBinaries.java
++++ b/nbbuild/antsrc/org/netbeans/nbbuild/extlibs/DownloadBinaries.java
+@@ -146,7 +146,14 @@ public class DownloadBinaries extends Task {
+                                 MavenCoordinate mc = MavenCoordinate.fromGradleFormat(hashAndFile[1]);
+                                 success &= fillInFile(hashAndFile[0], mc.toArtifactFilename(), manifest, () -> mavenFile(mc));
+                             } else {
+-                                success &= fillInFile(hashAndFile[0], hashAndFile[1], manifest, () -> legacyDownload(hashAndFile[0] + "-" + hashAndFile[1]));
++                                boolean isDirectURL = hashAndFile[1].startsWith("http:") || hashAndFile[1].startsWith("https:");
++                                final String baseName;
++                                if (isDirectURL) {
++                                    baseName = hashAndFile[1].substring(hashAndFile[1].lastIndexOf("/") + 1);
++                                } else {
++                                    baseName = hashAndFile[1];
++                                }
++                                success &= fillInFile(hashAndFile[0], baseName, manifest, () -> legacyDownload(hashAndFile[0], hashAndFile[1], isDirectURL));
+                             }
+                         }
+                     }
+@@ -253,7 +260,11 @@ public class DownloadBinaries extends Task {
+         }
+     }
+ 
+-    private byte[] legacyDownload(String cacheName) throws IOException {
++    private byte[] legacyDownload(String part1, String part2, boolean directURL) throws IOException {
++        if (directURL) {
++            return downloadFromServer(new URL(part2));
++        }
++        String cacheName = part1 + "-" + part2;
+         if (server == null) {
+             throw new BuildException("Must specify a server to download files from", getLocation());
+         }
+-- 
+2.21.0
+

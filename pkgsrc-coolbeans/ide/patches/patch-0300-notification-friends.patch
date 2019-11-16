@@ -2,23 +2,23 @@ diff --git a/platform/libs.jna.platform/nbproject/project.xml b/platform/libs.jn
 index 7fa905d96..1b235bd10 100644
 --- a/platform/libs.jna.platform/nbproject/project.xml
 +++ b/platform/libs.jna.platform/nbproject/project.xml
-@@ -37,6 +37,7 @@
-                 <friend>org.netbeans.core.nativeaccess</friend>
-                 <friend>org.netbeans.core.network</friend>
-                 <friend>org.netbeans.libs.jsch.agentproxy</friend>
-+                <friend>ro.emilianbold.notifications</friend>
+@@ -34,6 +34,7 @@
+                 </dependency>
+             </module-dependencies>
+             <public-packages>
++		<friend>ro.emilianbold.notifications</friend>
                  <package>com.sun.jna.platform</package>
                  <package>com.sun.jna.platform.dnd</package>
-                 <package>com.sun.jna.platform.mac</package>
+                 <package>com.sun.jna.platform.linux</package>
 diff --git a/platform/libs.jna/nbproject/project.xml b/platform/libs.jna/nbproject/project.xml
 index d9d630f9d..cd0e324fb 100644
 --- a/platform/libs.jna/nbproject/project.xml
 +++ b/platform/libs.jna/nbproject/project.xml
-@@ -72,6 +72,7 @@
-                 <friend>org.netbeans.modules.masterfs.macosx</friend>
-                 <friend>org.netbeans.modules.masterfs.windows</friend>
-                 <friend>org.netbeans.modules.python.qshell</friend>
-+                <friend>ro.emilianbold.notifications</friend>
+@@ -43,6 +43,7 @@
+                 </dependency>
+             </module-dependencies>
+             <public-packages>
++		<friend>ro.emilianbold.notifications</friend>
                  <package>com.sun.jna</package>
                  <package>com.sun.jna.ptr</package>
                  <package>com.sun.jna.win32</package>
