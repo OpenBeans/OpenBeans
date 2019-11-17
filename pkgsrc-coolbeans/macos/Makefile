@@ -22,8 +22,8 @@ PKGNAME     = macos-0.0
 CATEGORIES  = devel
 EXTRACT_SUFX=	.tar.gz
 
-DISTFILES= OpenJDK11U-jdk_x64_mac_hotspot_11.0.3_7.tar.gz
-SITES.OpenJDK11U-jdk_x64_mac_hotspot_11.0.3_7.tar.gz = -https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.3%2B7/OpenJDK11U-jdk_x64_mac_hotspot_11.0.3_7.tar.gz
+DISTFILES= OpenJDK11U-jdk_x64_mac_hotspot_11.0.5_10.tar.gz
+SITES.OpenJDK11U-jdk_x64_mac_hotspot_11.0.5_10.tar.gz = -https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.5%2B10/OpenJDK11U-jdk_x64_mac_hotspot_11.0.5_10.tar.gz
 
 WRKSRC=		${WRKDIR}
 #/jsparser
@@ -45,7 +45,7 @@ do-build:
 	${CP} ${WRKSRC}/OpenBeans.app/Contents/Resources/openbeans/nb/netbeans.icns ${WRKSRC}/OpenBeans.app/Contents/Resources/
 	#copy JRE
 	#TODO: delete jre/lib/src.zip to save space?
-	${CP} -R ${WRKSRC}/jdk-11.0.3+7/Contents/Home/ ${WRKSRC}/OpenBeans.app/Contents/Resources/openbeans/jre
+	${CP} -R ${WRKSRC}/jdk-11.0.5+10/Contents/Home/ ${WRKSRC}/OpenBeans.app/Contents/Resources/openbeans/jre
 
 do-install:
 	${MKDIR} ${DESTDIR}${PREFIX}/macos

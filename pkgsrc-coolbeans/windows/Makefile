@@ -22,13 +22,13 @@ PKGNAME     = windows-0.0
 CATEGORIES  = devel
 EXTRACT_SUFX=	.zip
 
-DISTFILES= OpenJDK11U-jdk_x64_windows_hotspot_11.0.3_7.zip OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.3_7.zip
-SITES.OpenJDK11U-jdk_x64_windows_hotspot_11.0.3_7.zip = -https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.3%2B7/OpenJDK11U-jdk_x64_windows_hotspot_11.0.3_7.zip
-SITES.OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.3_7.zip = -https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.3%2B7/OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.3_7.zip
+DISTFILES= OpenJDK11U-jdk_x64_windows_hotspot_11.0.5_10.zip OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.5_10.zip
+SITES.OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.5_10.zip = -https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.5%2B10/OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.5_10.zip
+SITES.OpenJDK11U-jdk_x64_windows_hotspot_11.0.5_10.zip = -https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.5%2B10/OpenJDK11U-jdk_x64_windows_hotspot_11.0.5_10.zip
 
 WRKSRC=		${WRKDIR}
 
-EXTRACT_DIR.OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.3_7.zip = ${WRKSRC}/32bit
+EXTRACT_DIR.OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.5_10.zip = ${WRKSRC}/32bit
 
 DEPENDS += openbeans:../../coolbeans/ide
 
@@ -54,9 +54,9 @@ pre-install:
 	${CP} ${WRKSRC}/win-build.bat ${DESTDIR}${PREFIX}/windows/64bit
 	${CP} ${WRKSRC}/win-build32.bat ${DESTDIR}${PREFIX}/windows/32bit
 	#copy 64bit JDK
-	${CP} -R ${WRKSRC}/jdk-11.0.3+7 ${DESTDIR}${PREFIX}/windows/64bit/openbeans/jre
+	${CP} -R ${WRKSRC}/jdk-11.0.5+10 ${DESTDIR}${PREFIX}/windows/64bit/openbeans/jre
 	#copy 32bit JDK
-	${CP} -R ${WRKSRC}/32bit/jdk-11.0.3+7 ${DESTDIR}${PREFIX}/windows/32bit/openbeans/jre
+	${CP} -R ${WRKSRC}/32bit/jdk-11.0.5+10 ${DESTDIR}${PREFIX}/windows/32bit/openbeans/jre
 	#make zips
 	cd ${DESTDIR}${PREFIX}/windows; zip -9 ${DESTDIR}${PREFIX}/windows/OpenBeans-Windows.64bit.zip -r 64bit
 	cd ${DESTDIR}${PREFIX}/windows; zip -9 ${DESTDIR}${PREFIX}/windows/OpenBeans-Windows.32bit.zip -r 32bit
