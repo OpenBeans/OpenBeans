@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<module codename="org.netbeans.libs.oracle.jsparser/1">
-    <module_version install_time="1548164140241" last="true" origin="installer" specification_version="1.0">
-        <file crc="2799972495" name="config/Modules/org-netbeans-libs-oracle-jsparser.xml"/>
-        <file crc="2736345595" name="modules/ext/com.oracle.js.parser.jar"/>
-        <file crc="3148649200" name="modules/org-netbeans-libs-oracle-jsparser.jar"/>
-    </module_version>
-</module>

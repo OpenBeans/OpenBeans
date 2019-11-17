@@ -65,7 +65,6 @@ PKGHOME=`pwd`/BUILD/pkg
 
 (cd BUILD/pkgsrc/coolbeans/ide; ${PKGHOME}/bin/bmake install)
 (cd BUILD/pkgsrc/coolbeans/nbjavac; ${PKGHOME}/bin/bmake install)
-(cd BUILD/pkgsrc/coolbeans/jsparser; ${PKGHOME}/bin/bmake install)
 (cd BUILD/pkgsrc/coolbeans/macos; ${PKGHOME}/bin/bmake install)
 (cd BUILD/pkgsrc/coolbeans/windows; ${PKGHOME}/bin/bmake install)
 
