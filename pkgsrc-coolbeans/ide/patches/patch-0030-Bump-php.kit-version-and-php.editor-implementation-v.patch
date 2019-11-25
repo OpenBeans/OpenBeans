@@ -1,4 +1,4 @@
-From dd2bb0b8ac4a0f5243e4350ccf47f137307d3a42 Mon Sep 17 00:00:00 2001
+From c50169af30ddebe4077b58c3d51c55aa723d04f9 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Thu, 25 Jul 2019 22:24:28 +0300
 Subject: [PATCH 30/32] Bump php.kit version and php.editor implementation

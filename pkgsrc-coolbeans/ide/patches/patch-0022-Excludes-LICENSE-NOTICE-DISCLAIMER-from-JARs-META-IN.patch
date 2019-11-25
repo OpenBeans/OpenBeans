@@ -1,4 +1,4 @@
-From e308625d84ce1ab593232bf9e9ddf63ea0490787 Mon Sep 17 00:00:00 2001
+From 2ad0c99b3198b49f21d695d216aa753a1ed82267 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Sat, 8 Dec 2018 13:44:09 +0200
 Subject: [PATCH 22/32] Excludes LICENSE/NOTICE/DISCLAIMER from JARs META-INF

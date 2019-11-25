@@ -1,4 +1,4 @@
-From ee357c40c8055cd2f1601e8af6e6d7c17e3e49f9 Mon Sep 17 00:00:00 2001
+From 9195723fed8c94ad0b4fcfa1f9e979c538055104 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Sat, 10 Nov 2018 07:14:47 +0200
 Subject: [PATCH 20/32] Use OpenBeans name in AcceptLicense

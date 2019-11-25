@@ -1,4 +1,4 @@
-From d1a379d24a9fd618d03ba5324f5e76466dcb4a82 Mon Sep 17 00:00:00 2001
+From 10ddd826d0220c317859a51f060b11c50d47165e Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Fri, 9 Nov 2018 00:11:48 +0200
 Subject: [PATCH 14/32] Removes `dev` from about box description, makes splash
@@ -18,9 +18,34 @@ License: Copyright (c) 2018, 2019 Emilian Marius Bold
  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ---
+ .../antsrc/org/netbeans/nbbuild/ReleaseJsonProperties.java   | 4 ++++
  .../core.startup/src/org/netbeans/core/startup/Splash.java   | 5 ++++-
- 1 file changed, 4 insertions(+), 1 deletion(-)
+ 2 files changed, 8 insertions(+), 1 deletion(-)
 
+diff --git a/nbbuild/antsrc/org/netbeans/nbbuild/ReleaseJsonProperties.java b/nbbuild/antsrc/org/netbeans/nbbuild/ReleaseJsonProperties.java
+index d144b9a8e5..89769cda18 100644
+--- a/nbbuild/antsrc/org/netbeans/nbbuild/ReleaseJsonProperties.java
++++ b/nbbuild/antsrc/org/netbeans/nbbuild/ReleaseJsonProperties.java
+@@ -178,15 +178,19 @@ public class ReleaseJsonProperties extends Task {
+             // used for cache and user dir
+             config.write(("metabuild.RawVersion=" + requiredbranchinfo.version + optionalversion + "\n").getBytes());
+             config.write(("metabuild.apachepreviousversion=" + String.join(",", updateValues) + "\n").getBytes());
++/*
+             if (branch.equals("master")) {
+                 config.write(("metabuild.ComputedSplashVersion=DEV (Build {0})\n").getBytes());
+                 config.write(("metabuild.ComputedTitleVersion=DEV {0}\n").getBytes());
+                 config.write(("metabuild.logcli=-J-Dnetbeans.logger.console=true -J-ea\n").getBytes());
+             } else {
++*/
+                 config.write(("metabuild.ComputedSplashVersion=" + requiredbranchinfo.version + optionalversion + "\n").getBytes());
+                 config.write(("metabuild.ComputedTitleVersion=" + requiredbranchinfo.version + optionalversion + "\n").getBytes());
+                 config.write(("metabuild.logcli=\n").getBytes());
++/*
+             }
++*/
+         } catch (IOException ex) {
+             throw new BuildException("Properties File for release cannot be created");
+         }
 diff --git a/platform/core.startup/src/org/netbeans/core/startup/Splash.java b/platform/core.startup/src/org/netbeans/core/startup/Splash.java
 index c9985ca2cb..18017127c1 100644
 --- a/platform/core.startup/src/org/netbeans/core/startup/Splash.java

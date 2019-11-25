@@ -1,4 +1,4 @@
-From d13ff55c74a71affe22b401d9d5ae1bf1b4ce902 Mon Sep 17 00:00:00 2001
+From 7d1977077b268dca63f951df926192c87327bb76 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Fri, 9 Nov 2018 13:35:26 +0200
 Subject: [PATCH 17/32] Enables netbeans.diff.default.compact by default

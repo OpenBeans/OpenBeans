@@ -1,4 +1,4 @@
-From dfdbd190860ad8a92c235185a120a6a00ace5504 Mon Sep 17 00:00:00 2001
+From 1c57324e75f342b109f4a706e096a372aacdcef9 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Mon, 10 Jun 2019 23:16:39 +0300
 Subject: [PATCH 26/32] Warn macOS users about AppTranslocation

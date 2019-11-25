@@ -1,4 +1,4 @@
-From ef8d8068a802a954c982afe9d601a440395012da Mon Sep 17 00:00:00 2001
+From 902587f7fe8669f2a30c9ee97d9ffe8098a6fc2f Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Mon, 11 Nov 2019 13:58:15 +0200
 Subject: [PATCH 32/32] Re-adds wildfly

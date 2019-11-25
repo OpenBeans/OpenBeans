@@ -1,4 +1,4 @@
-From d47023ad88ac355497ebf48dc133803946333a44 Mon Sep 17 00:00:00 2001
+From 05d55c6649eaec4979e6aac42a2d84bda7031005 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Tue, 25 Dec 2018 11:54:01 +0200
 Subject: [PATCH 24/32] Allows a direct URL in the external dependency file

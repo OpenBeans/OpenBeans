@@ -1,4 +1,4 @@
-From 1002af2597346af362a6a267a2d094fda115e62f Mon Sep 17 00:00:00 2001
+From 640c09b0068b0572eed2ea972d0e5586229b127b Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Tue, 11 Jun 2019 12:31:22 +0300
 Subject: [PATCH 27/32] Add 2018.12 to the list of imported settings. This will

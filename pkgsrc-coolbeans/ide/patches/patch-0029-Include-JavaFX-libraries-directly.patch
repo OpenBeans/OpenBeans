@@ -1,4 +1,4 @@
-From 907acae80469eff69bc81c2cf5588fafd033ec37 Mon Sep 17 00:00:00 2001
+From df2d7ab1425c9cc664a7e4623e0a4fb57ba51b58 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Fri, 19 Jul 2019 13:05:25 +0300
 Subject: [PATCH 29/32] Include JavaFX libraries directly
