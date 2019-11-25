@@ -1,7 +1,7 @@
 From 1fbd0bdab6688cb7882f5934e6220ce9b36fe3e9 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Thu, 8 Nov 2018 20:36:56 +0200
-Subject: [PATCH 12/32] Using old version of modules, not the newer ones after
+Subject: [PATCH 12/33] Using old version of modules, not the newer ones after
  the cherry-picked retina commits
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  

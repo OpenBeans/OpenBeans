@@ -1,7 +1,7 @@
 From d2bc04d7537bd7f620ddb09624dcabcd5124578b Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Sat, 10 Nov 2018 07:13:38 +0200
-Subject: [PATCH 19/32] Backout and tweak the changeset which removed
+Subject: [PATCH 19/33] Backout and tweak the changeset which removed
  AcceptLicense (621a640a89e4625b448bc8b3b73ab6b74968d9a5)
 
 ---

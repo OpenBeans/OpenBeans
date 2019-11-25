@@ -2539,6 +2539,8 @@ ${PKGNAME}/java/modules/ext/maven/lucene-queryparser-5.5.5.jar
 ${PKGNAME}/java/modules/ext/maven/maven-dependency-tree-2.0.jar
 ${PKGNAME}/java/modules/ext/maven/rootpackage/default-report.xml
 ${PKGNAME}/java/modules/ext/nb-custom-jshell-probe.jar
+${PKGNAME}/java/modules/ext/nb-javac-13-api.jar
+${PKGNAME}/java/modules/ext/nb-javac-13-impl.jar
 ${PKGNAME}/java/modules/ext/nb-mod-jshell-probe.jar
 ${PKGNAME}/java/modules/ext/okhttp-3.9.0.jar
 ${PKGNAME}/java/modules/ext/okio-1.9.0.jar

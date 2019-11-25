@@ -1,7 +1,7 @@
-From 902587f7fe8669f2a30c9ee97d9ffe8098a6fc2f Mon Sep 17 00:00:00 2001
+From 3cd2e3cb22e91dd63eef33b4b5b18d970611ee43 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Mon, 11 Nov 2019 13:58:15 +0200
-Subject: [PATCH 32/32] Re-adds wildfly
+Subject: [PATCH 33/33] Re-adds wildfly
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any

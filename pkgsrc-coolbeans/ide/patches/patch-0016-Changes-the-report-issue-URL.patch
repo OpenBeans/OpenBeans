@@ -1,7 +1,7 @@
 From acd3829013200cf02f658f0e57d4a38402c0f8df Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Fri, 9 Nov 2018 09:17:37 +0200
-Subject: [PATCH 16/32] Changes the report issue URL
+Subject: [PATCH 16/33] Changes the report issue URL
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any

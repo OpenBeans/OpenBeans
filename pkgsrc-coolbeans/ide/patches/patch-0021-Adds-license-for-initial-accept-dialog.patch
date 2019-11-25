@@ -1,7 +1,7 @@
 From e20d3ccb87cc7591a369b373fcf34ea7ee70e543 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Sat, 10 Nov 2018 08:03:36 +0200
-Subject: [PATCH 21/32] Adds license for initial accept dialog
+Subject: [PATCH 21/33] Adds license for initial accept dialog
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any

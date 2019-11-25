@@ -1,7 +1,7 @@
 From a1b3a7d9333609ce297e8361d793f0c1de470386 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Tue, 11 Dec 2018 15:54:59 +0200
-Subject: [PATCH 23/32] Fixes the 8.2 Plugin Portal URL and sets it to the
+Subject: [PATCH 23/33] Fixes the 8.2 Plugin Portal URL and sets it to the
  certified plugins
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  

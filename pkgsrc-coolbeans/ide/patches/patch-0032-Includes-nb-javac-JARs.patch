@@ -1,0 +1,96 @@
+From c6b8034ae582eb707bc6146b580488a1091ef3c4 Mon Sep 17 00:00:00 2001
+From: Emilian Bold <emi@apache.org>
+Date: Mon, 25 Nov 2019 16:44:55 +0200
+Subject: [PATCH 32/33] Includes nb-javac JARs
+License: Copyright (c) 2018, 2019 Emilian Marius Bold
+ 
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+ java/libs.javacapi/manifest.mf                   | 1 +
+ java/libs.javacapi/nbproject/project.properties  | 1 +
+ java/libs.javacapi/nbproject/project.xml         | 2 +-
+ java/libs.javacimpl/manifest.mf                  | 2 ++
+ java/libs.javacimpl/nbproject/project.properties | 1 +
+ java/libs.javacimpl/nbproject/project.xml        | 2 +-
+ 6 files changed, 7 insertions(+), 2 deletions(-)
+
+diff --git a/java/libs.javacapi/manifest.mf b/java/libs.javacapi/manifest.mf
+index 5177edfe6a..1017f6655d 100644
+--- a/java/libs.javacapi/manifest.mf
++++ b/java/libs.javacapi/manifest.mf
+@@ -4,3 +4,4 @@ OpenIDE-Module-Implementation-Version: 3
+ OpenIDE-Module-Localizing-Bundle: org/netbeans/libs/javacapi/Bundle.properties
+ OpenIDE-Module-Layer: org/netbeans/libs/javacapi/layer.xml
+ OpenIDE-Module-Requires: org.openide.modules.ModuleFormat2
++OpenIDE-Module-Hide-Classpath-Packages: com.sun.javadoc.**, com.sun.source.**, javax.annotation.processing.**, javax.lang.model.**, javax.tools.**, com.sun.tools.javac.**
+diff --git a/java/libs.javacapi/nbproject/project.properties b/java/libs.javacapi/nbproject/project.properties
+index 2e991656b0..91a01de5c8 100644
+--- a/java/libs.javacapi/nbproject/project.properties
++++ b/java/libs.javacapi/nbproject/project.properties
+@@ -24,3 +24,4 @@ nbm.module.author=Petr Hrebejk
+ spec.version.base=8.27.0
+ javadoc.arch=${basedir}/arch.xml
+ module.javadoc.packages=com.sun.source.tree,com.sun.source.util
++release.external/nb-javac-13-api.jar=modules/ext/nb-javac-13-api.jar
+diff --git a/java/libs.javacapi/nbproject/project.xml b/java/libs.javacapi/nbproject/project.xml
+index 0dc3ad9bdd..e5df4fb732 100644
+--- a/java/libs.javacapi/nbproject/project.xml
++++ b/java/libs.javacapi/nbproject/project.xml
+@@ -39,7 +39,7 @@
+                 <package>javax.tools</package>
+             </public-packages>
+             <class-path-extension>
+-                <runtime-relative-path />
++                <runtime-relative-path>ext/nb-javac-13-api.jar</runtime-relative-path>
+                 <binary-origin>external/nb-javac-13-api.jar</binary-origin>
+             </class-path-extension>
+         </data>
+diff --git a/java/libs.javacimpl/manifest.mf b/java/libs.javacimpl/manifest.mf
+index b7e1087836..855b4ab641 100644
+--- a/java/libs.javacimpl/manifest.mf
++++ b/java/libs.javacimpl/manifest.mf
+@@ -3,3 +3,5 @@ OpenIDE-Module: org.netbeans.libs.javacimpl/1
+ OpenIDE-Module-Implementation-Version: 25
+ OpenIDE-Module-Localizing-Bundle: org/netbeans/libs/javacimpl/Bundle.properties
+ OpenIDE-Module-Requires: org.openide.modules.ModuleFormat2
++OpenIDE-Module-Hide-Classpath-Packages: com.sun.tools.javac.**, com.sun.tools.javadoc.**, com.sun.tools.javap.**, com.sun.tools.classfile.**, com.sun.tools.doclint.**
++OpenIDE-Module-Provides: org.netbeans.modules.nbjavac
+diff --git a/java/libs.javacimpl/nbproject/project.properties b/java/libs.javacimpl/nbproject/project.properties
+index f3c355a486..5bc46e4295 100644
+--- a/java/libs.javacimpl/nbproject/project.properties
++++ b/java/libs.javacimpl/nbproject/project.properties
+@@ -20,6 +20,7 @@ nbm.homepage=http://jackpot.netbeans.org/
+ nbm.module.author=Petr Hrebejk
+ spec.version.base=0.53.0
+ javadoc.arch=${basedir}/arch.xml
++release.external/nb-javac-13-impl.jar=modules/ext/nb-javac-13-impl.jar
+ 
+ 
+ # Hidden class found: com.sun.tools.javac.jvm.Gen$GenContext in method public void com.sun.tools.javac.jvm.Gen.genStat(com.sun.tools.javac.tree.JCTree,com.sun.tools.javac.comp.Env<com.sun.tools.javac.jvm.Gen$GenContext>,int) in class com.sun.tools.javac.jvm.Gen
+diff --git a/java/libs.javacimpl/nbproject/project.xml b/java/libs.javacimpl/nbproject/project.xml
+index 6b0987f853..5831c174ad 100644
+--- a/java/libs.javacimpl/nbproject/project.xml
++++ b/java/libs.javacimpl/nbproject/project.xml
+@@ -36,7 +36,7 @@
+             </module-dependencies>
+             <public-packages/>
+             <class-path-extension>
+-                <runtime-relative-path />
++                <runtime-relative-path>ext/nb-javac-13-impl.jar</runtime-relative-path>
+                 <binary-origin>external/nb-javac-13-impl.jar</binary-origin>
+             </class-path-extension>
+         </data>
+-- 
+2.21.0
+

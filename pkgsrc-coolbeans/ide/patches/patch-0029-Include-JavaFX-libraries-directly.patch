@@ -1,7 +1,7 @@
 From df2d7ab1425c9cc664a7e4623e0a4fb57ba51b58 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Fri, 19 Jul 2019 13:05:25 +0300
-Subject: [PATCH 29/32] Include JavaFX libraries directly
+Subject: [PATCH 29/33] Include JavaFX libraries directly
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any

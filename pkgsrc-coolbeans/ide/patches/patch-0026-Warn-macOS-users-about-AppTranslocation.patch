@@ -1,7 +1,7 @@
 From 1c57324e75f342b109f4a706e096a372aacdcef9 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Mon, 10 Jun 2019 23:16:39 +0300
-Subject: [PATCH 26/32] Warn macOS users about AppTranslocation
+Subject: [PATCH 26/33] Warn macOS users about AppTranslocation
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any

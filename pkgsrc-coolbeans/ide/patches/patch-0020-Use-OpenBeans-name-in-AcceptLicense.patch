@@ -1,7 +1,7 @@
 From 9195723fed8c94ad0b4fcfa1f9e979c538055104 Mon Sep 17 00:00:00 2001
 From: Emilian Bold <emi@apache.org>
 Date: Sat, 10 Nov 2018 07:14:47 +0200
-Subject: [PATCH 20/32] Use OpenBeans name in AcceptLicense
+Subject: [PATCH 20/33] Use OpenBeans name in AcceptLicense
 License: Copyright (c) 2018, 2019 Emilian Marius Bold
  
  Permission to use, copy, modify, and distribute this software for any
