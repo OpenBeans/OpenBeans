@@ -20,7 +20,7 @@ SHA256 (netbeans-releases.zip) = 7f1e5c730235f0183b6d3ed30fdb90f86b74bf39bd45b1f
 
 SHA256 (maven-search-remote.zip) = 3b4c7ece12c862d4cbb3f5bb503f95751ad74038dd362de7d2490bf7c3c33f5c
 
-SHA1 (patch-0001-Adds-OpenBeans-branding.patch) = 3a3f572232616c36b8b5906541a8958a94bcad01
+SHA1 (patch-0001-Adds-OpenBeans-branding.patch) = 18b3ff84364e7677b8e532e7aa0069f32cebfa6e
 SHA1 (patch-0002-Enables-enterprise-cluster.patch) = dfdca230540058d421c00dc462541ba755e6a588
 SHA1 (patch-0003-Changes-Update-Center-URLs.patch) = 03f204dc2224e22b10a3e77d722d147df194865e
 SHA1 (patch-0004-User-dir-and-caches.patch) = 3a8ae90b0a2ba31cba44501bd5ce01ef606591a8
@@ -47,7 +47,7 @@ SHA1 (patch-0024-Allows-a-direct-URL-in-the-external-dependency-file.patch) = 85
 SHA1 (patch-0025-Includes-the-patches-profiler-DLLs-on-Windows-x64.patch) = 09a20f624a368e2cbc027590f240c06088a8ad53
 SHA1 (patch-0026-Warn-macOS-users-about-AppTranslocation.patch) = 357898935aff7ccf2836beba4bce36adf60f2923
 SHA1 (patch-0027-Add-2018.12-to-the-list-of-imported-settings.-This-w.patch) = 9d8a3991245db8d60606117b98aed792e1a15209
-SHA1 (patch-0028-Updates-launcher-cache-user-dir-and-version-info.patch) = f38f76eafd9fdec79ad7fc2c99364eaed3ca0e13
+SHA1 (patch-0028-Updates-launcher-cache-user-dir-and-version-info.patch) = 73dabd67b1fb0ced5269e9079aefaa71379a85f9
 SHA1 (patch-0029-Include-JavaFX-libraries-directly.patch) = 617e2686c4d8d07410dc7a5f3f1a388bc51b4c20
 SHA1 (patch-0030-Bump-php.kit-version-and-php.editor-implementation-v.patch) = eb9c91ccf89fe16c588c0a82fbb0a6a6b4f05d7b
 SHA1 (patch-0031-Adds-OpenBeans-branding-generated.patch) = 1ee4263d9ce631a57e57b4d7d9409dd690ac091c

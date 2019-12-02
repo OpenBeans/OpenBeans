@@ -22,9 +22,9 @@ chmod +x OpenBeans.app/Contents/Resources/openbeans/platform/terminal-notifier-1
 
 codesign -s 7B8M7A5USJ "OpenBeans.app"
 
-DMG="OpenBeans-2019.06.dmg"
+DMG="OpenBeans-2019.12.dmg"
 
-hdiutil create -volname "OpenBeans 2019.06" -srcfolder "OpenBeans.app" -ov -format UDZO "$DMG"
+hdiutil create -volname "OpenBeans 2019.12" -srcfolder "OpenBeans.app" -ov -format UDZO "$DMG"
 
 xattr -rc "$DMG"
 

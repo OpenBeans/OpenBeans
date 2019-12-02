@@ -12,7 +12,7 @@
 #define iconfile "coolbeans.ico"
 #define SrcApp "netbeans" + "64.exe"
 
-#define appversion "2019.06"
+#define appversion "2019.12"
 
 [Setup]
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)

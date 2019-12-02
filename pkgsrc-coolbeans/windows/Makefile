@@ -43,7 +43,7 @@ pre-install:
 	${MKDIR} ${DESTDIR}${PREFIX}/windows/32bit
 	#unzip
 	../../mk/extract/extract -d ${DESTDIR}${PREFIX}/windows/64bit ${PREFIX}/zip/OpenBeans.tgz
-	${MV} ${DESTDIR}${PREFIX}/windows/64bit/openbeans-2019.06 ${DESTDIR}${PREFIX}/windows/64bit/openbeans
+	${MV} ${DESTDIR}${PREFIX}/windows/64bit/openbeans-2019.12 ${DESTDIR}${PREFIX}/windows/64bit/openbeans
 	#and copy again on 32bit
 	${CP} -R ${DESTDIR}${PREFIX}/windows/64bit/openbeans ${DESTDIR}${PREFIX}/windows/32bit
 	#copy installer stuff

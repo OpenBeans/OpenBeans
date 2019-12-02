@@ -77,14 +77,14 @@ index 3d8adef269..b08f2afdce 100644
 -#define VER "9.0.0.0"
 +#define COMPANY "JOSEKI BOLD SRL"
 +#define COMPONENT "OpenBeans"
-+#define VER "2019.06"
++#define VER "2019.12"
  #define FVER 9,0,0,0
  #define BUILD_ID "03062018"
  #define INTERNAL_NAME "netbeans"
 -#define COPYRIGHT "Based on Apache NetBeans from the Apache Software Foundation and is licensed under Apache License Version 2.0"
 -#define NAME "NetBeans IDE 9.0"
 +#define COPYRIGHT "Copyright (c) 2018-2019 JOSEKI BOLD SRL"
-+#define NAME "OpenBeans 2019.06"
++#define NAME "OpenBeans 2019.12"
  
 -- 
 2.21.0

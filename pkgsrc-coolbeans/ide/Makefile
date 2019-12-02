@@ -19,7 +19,7 @@ PATCH_STRIP=-p1
 
 DISTNAME= openbeans
 # a version name is required, can't just use openbsd
-PKGNAME= openbeans-2019.06
+PKGNAME= openbeans-2019.12
 CATEGORIES= devel
 EXTRACT_SUFX=	.zip
 

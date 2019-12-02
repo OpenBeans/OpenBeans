@@ -85,7 +85,7 @@ index 2630e071b9..2e30a059ee 100644
 -LBL_splash_window_title=Starting Apache NetBeans IDE
 -currentVersion=Apache NetBeans IDE @@metabuild.ComputedSplashVersion@@
 +LBL_splash_window_title=Starting OpenBeans IDE
-+currentVersion=OpenBeans IDE 2019.06 (Build {0})
++currentVersion=OpenBeans IDE @@metabuild.ComputedSplashVersion@@
  
 -MSG_warning=NetBeans IDE - Warning
 -MSG_info=NetBeans IDE - Information
@@ -101,8 +101,8 @@ index 301d0a9229..2219d9309f 100644
  # {1} project name
 -CTL_MainWindow_Title={1} - Apache NetBeans IDE @@metabuild.ComputedTitleVersion@@
 -CTL_MainWindow_Title_No_Project=Apache NetBeans IDE @@metabuild.ComputedTitleVersion@@
-+CTL_MainWindow_Title={1} - OpenBeans IDE 2019.06
-+CTL_MainWindow_Title_No_Project=OpenBeans IDE 2019.06
++CTL_MainWindow_Title={1} - OpenBeans IDE @@metabuild.ComputedTitleVersion@@
++CTL_MainWindow_Title_No_Project=OpenBeans IDE @@metabuild.ComputedTitleVersion@@
 diff --git a/nb/ide.launcher/unix/netbeans b/nb/ide.launcher/unix/netbeans
 index 42c9808e5e..2dea0413a5 100644
 --- a/nb/ide.launcher/unix/netbeans

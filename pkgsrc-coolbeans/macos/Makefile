@@ -30,7 +30,7 @@ WRKSRC=		${WRKDIR}
 
 DEPENDS += openbeans:../../coolbeans/ide
 
-APP_VERSION=2019.06
+APP_VERSION=2019.12
 
 pre-configure:
 	${CP} -R ${FILESDIR}/* ${WRKSRC}
@@ -39,7 +39,7 @@ do-build:
 	${MKDIR} ${WRKSRC}/OpenBeans.app/Contents/MacOS
 	${MKDIR} ${WRKSRC}/OpenBeans.app/Contents/Resources
 	${SED} "s/NETBEANS_VERSION/${APP_VERSION}/g" ${WRKSRC}/Info.plist > ${WRKSRC}/OpenBeans.app/Contents/Info.plist
-	${CP} -R ${PREFIX}/openbeans-2019.06 ${WRKSRC}/OpenBeans.app/Contents/Resources/openbeans
+	${CP} -R ${PREFIX}/openbeans-2019.12 ${WRKSRC}/OpenBeans.app/Contents/Resources/openbeans
 	${CP} ${WRKSRC}/original-netbeans ${WRKSRC}/OpenBeans.app/Contents/MacOS/netbeans
 	${CHMOD} +x ${WRKSRC}/OpenBeans.app/Contents/MacOS/netbeans
 	${CP} ${WRKSRC}/OpenBeans.app/Contents/Resources/openbeans/nb/netbeans.icns ${WRKSRC}/OpenBeans.app/Contents/Resources/
@@ -51,7 +51,7 @@ do-install:
 	${MKDIR} ${DESTDIR}${PREFIX}/macos
 	${MKDIR} ${DESTDIR}${PREFIX}/zip
 	${TAR} cvfz ${DESTDIR}${PREFIX}/macos/OpenBeans.app.tgz -C ${WRKSRC} OpenBeans.app
-	${TAR} cvfz ${DESTDIR}${PREFIX}/zip/OpenBeans.tgz -C ${PREFIX}/ openbeans-2019.06
+	${TAR} cvfz ${DESTDIR}${PREFIX}/zip/OpenBeans.tgz -C ${PREFIX}/ openbeans-2019.12
 	${CP} ${WRKSRC}/sign-macos.sh ${DESTDIR}${PREFIX}/macos
 
 .include "../../mk/bsd.pkg.mk"

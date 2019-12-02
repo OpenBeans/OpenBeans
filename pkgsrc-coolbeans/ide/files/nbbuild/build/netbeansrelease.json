@@ -9,8 +9,8 @@
         "mavenversion": "RELEASE112",
         "tlp": "true",
         "apidocurl": "https://bits.netbeans.org/11.2/javadoc",
-        "update_url": "https://www.openbeans.org/nb/updates/2019.06/updates.xml.gz?{$netbeans.hash.code}",
-        "plugin_url": "https://www.openbeans.org/nbpluginportal/updates/2019.06/catalog.xml.gz",
+        "update_url": "https://updates.openbeans.org/nb/updates/2019.12/updates.xml.gz?{$netbeans.hash.code}",
+        "plugin_url": "https://updates.openbeans.org/nbpluginportal/updates/2019.12/catalog.xml.gz",
         "releasedate": {
             "day": "-",
             "month": "-",
