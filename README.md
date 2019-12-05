@@ -1,6 +1,6 @@
 # OpenBeans
 
-OpenBeans is an IDE distribution. It packages the best there is in the Apache NetBeans* ecosystem, polishes it, fixes minor annoyances and serves them to you in a clean bundle. Formerly CoolBeans.
+OpenBeans is an IDE distribution. It packages the best there is in the ecosystem, polishes it, fixes minor annoyances and serves them to you in a clean bundle. Formerly CoolBeans.
 
 To download OpenBeans please head over to [www.openbeans.org](http://www.openbeans.org) or to the GitHub [releases page](https://github.com/OpenBeans/OpenBeans/releases).
 
