@@ -1,0 +1,114 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run build.sh
+      run: |
+        export SH=/bin/bash
+        mkdir BUILD
+        sudo apt-get install make mingw-w64
+        ./build.sh clean
+    - name: Upload OpenBeans.app.tgz
+      uses: actions/upload-artifact@v1
+      with:
+        name: z-internal-OpenBeans.app.tgz
+        path: /home/runner/work/OpenBeans/OpenBeans/BUILD/pkgsrc/coolbeans/macos/work/.destdir/home/runner/work/OpenBeans/OpenBeans/BUILD/pkgsrc/bootstrap/../../pkg/macos/OpenBeans.app.tgz
+    - name: Upload sign-macos.sh
+      uses: actions/upload-artifact@v1
+      with:
+        name: z-internal-sign-macos.sh
+        path: /home/runner/work/OpenBeans/OpenBeans/BUILD/pkgsrc/coolbeans/macos/work/.destdir/home/runner/work/OpenBeans/OpenBeans/BUILD/pkgsrc/bootstrap/../../pkg/macos/sign-macos.sh
+    - name: Upload OpenBeans.tgz
+      uses: actions/upload-artifact@v1
+      with:
+        name: OpenBeans-2019.12.tgz
+        path: /home/runner/work/OpenBeans/OpenBeans/BUILD/pkgsrc/coolbeans/macos/work/.destdir/home/runner/work/OpenBeans/OpenBeans/BUILD/pkgsrc/bootstrap/../../pkg/zip/OpenBeans.tgz
+    - name: Upload OpenBeans-Windows.32bit.zip
+      uses: actions/upload-artifact@v1
+      with:
+        name: z-internal-OpenBeans-Windows.32bit.zip
+        path: /home/runner/work/OpenBeans/OpenBeans/BUILD/pkgsrc/coolbeans/windows/work/.destdir/home/runner/work/OpenBeans/OpenBeans/BUILD/pkgsrc/bootstrap/../../pkg/windows/OpenBeans-Windows.32bit.zip
+    - name: Upload OpenBeans-Windows.64bit.zip
+      uses: actions/upload-artifact@v1
+      with:
+        name: z-internal-OpenBeans-Windows.64bit.zip
+        path: /home/runner/work/OpenBeans/OpenBeans/BUILD/pkgsrc/coolbeans/windows/work/.destdir/home/runner/work/OpenBeans/OpenBeans/BUILD/pkgsrc/bootstrap/../../pkg/windows/OpenBeans-Windows.64bit.zip
+
+  macOS:
+    name: macOS DMG
+    needs: build
+    runs-on: macos
+    steps:
+      - name: Download OpenBeans.app.tgz
+        uses: actions/download-artifact@v1
+        with:
+          name: z-internal-OpenBeans.app.tgz
+          path: .
+      - name: Download sign-macos.sh
+        uses: actions/download-artifact@v1
+        with:
+          name: z-internal-sign-macos.sh
+          path: .
+      - name: Create and sign DMG
+        shell: bash
+        run: |
+          mv z-internal-sign-macos.sh sign-macos.sh
+          stat sign-macos.sh
+          ls -l sign-macos.sh
+          mv z-internal-OpenBeans.app.tgz OpenBeans.app.tgz
+          chmod +x sign-macos.sh
+          sh sign-macos.sh
+      - name: Upload OpenBeans-2019.12.dmg
+        uses: actions/upload-artifact@v1
+        with:
+          name: OpenBeans-2019.12.dmg
+          path: OpenBeans-2019.12.dmg
+  windows:
+    name: Windows 64bit
+    needs: build
+    runs-on: [windows-latest]
+    steps:
+      - name: Download OpenBeans-Windows.64bit.zip
+        uses: actions/download-artifact@v1
+        with:
+          name: z-internal-OpenBeans-Windows.64bit.zip
+          path: .
+      - name: Create installer
+        shell: bash
+        run: |
+          7z x z-internal-OpenBeans-Windows.64bit.zip
+          cd 64bit
+          iscc coolbeans-setup.iss
+      - name: Upload OpenBeans 64bit installer
+        uses: actions/upload-artifact@v1
+        with:
+          name: OpenBeans Setup 64bit
+          path: 64bit/Output/OpenBeans-2019.12-64bit.exe
+  windows32:
+    name: Windows 32bit
+    needs: build
+    runs-on: [windows-latest]
+    steps:
+      - name: Download OpenBeans-Windows.32bit.zip
+        uses: actions/download-artifact@v1
+        with:
+          name: z-internal-OpenBeans-Windows.32bit.zip
+          path: .
+      - name: Create installer
+        shell: bash
+        run: |
+          7z x z-internal-OpenBeans-Windows.32bit.zip
+          cd 32bit
+          iscc coolbeans-setup32.iss
+      - name: Upload OpenBeans 32bit installer
+        uses: actions/upload-artifact@v1
+        with:
+          name: OpenBeans Setup 32bit
+          path: 32bit/Output/OpenBeans-2019.12-32bit.exe
