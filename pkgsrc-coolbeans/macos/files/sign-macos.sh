@@ -20,7 +20,7 @@ tar xvfz OpenBeans.app.tgz
 #make sure it's executable
 chmod +x OpenBeans.app/Contents/Resources/openbeans/platform/terminal-notifier-1.7.1/terminal-notifier.app/Contents/MacOS/terminal-notifier
 
-codesign -s 7B8M7A5USJ "OpenBeans.app"
+codesign -s 7B8M7A5USJ "OpenBeans.app" || echo "=== NOT SIGNED ==="
 
 DMG="OpenBeans-2019.12.dmg"
 
@@ -28,4 +28,4 @@ hdiutil create -volname "OpenBeans 2019.12" -srcfolder "OpenBeans.app" -ov -form
 
 xattr -rc "$DMG"
 
-codesign -s 7B8M7A5USJ -v "$DMG"
+codesign -s 7B8M7A5USJ -v "$DMG" || echo "=== NOT SIGNED ==="
