@@ -36,7 +36,7 @@ DefaultDirName={pf}\{#appname}
 DisableProgramGroupPage=yes
 
 LicenseFile= {#licensefile}
-OutputBaseFilename={#appname} Setup
+OutputBaseFilename={#appname}-2019.12-32bit
 SetupIconFile={#iconfile}
 Compression=lzma
 SolidCompression=yes
@@ -51,8 +51,9 @@ AllowUNCPath=no
 ; ChangesAssociations=yes
 ; ChangesEnvironment=yes
 CloseApplications=yes
-SignTool=signtool.exe sign /a /fd SHA256 /tr http://rfc3161timestamp.globalsign.com/advanced /td SHA256 $f
-SignedUninstaller=yes
+;; EMI: Uncomment the bellow line when signing manually
+;;SignTool=signtool.exe sign /a /fd SHA256 /tr http://rfc3161timestamp.globalsign.com/advanced /td SHA256 $f
+;;SignedUninstaller=yes
 
 
 [Tasks]
