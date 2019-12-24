@@ -59,10 +59,8 @@ jobs:
       - name: Create and sign DMG
         shell: bash
         run: |
-          mv z-internal-sign-macos.sh sign-macos.sh
           stat sign-macos.sh
           ls -l sign-macos.sh
-          mv z-internal-OpenBeans.app.tgz OpenBeans.app.tgz
           chmod +x sign-macos.sh
           sh sign-macos.sh
       - name: Upload OpenBeans-2019.12.dmg
@@ -83,7 +81,7 @@ jobs:
       - name: Create installer
         shell: bash
         run: |
-          7z x z-internal-OpenBeans-Windows.64bit.zip
+          7z x OpenBeans-Windows.64bit.zip
           cd 64bit
           iscc coolbeans-setup.iss
       - name: Upload OpenBeans 64bit installer
@@ -104,7 +102,7 @@ jobs:
       - name: Create installer
         shell: bash
         run: |
-          7z x z-internal-OpenBeans-Windows.32bit.zip
+          7z x OpenBeans-Windows.32bit.zip
           cd 32bit
           iscc coolbeans-setup32.iss
       - name: Upload OpenBeans 32bit installer
